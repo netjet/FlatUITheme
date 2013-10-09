@@ -356,18 +356,26 @@ button:active {
     cursor: pointer;
   }
   
+  input[type="checkbox"]:focus {
+    .outline;  
+  }
+  
+  input[type="checkbox"] + label:hover .checker {
+    background: @white-color;
+  }
+  
   input[type="checkbox"] + label .checker {
-    position: absolute;
-    vertical-align: middle;
-    cursor: pointer;
-    background: @l-gray-color;
-    .rounded;
-    width: @checkbox-size;
-    height: @checkbox-size;
-    text-align: center;
-    margin: 0 10px 0 0;
+   position: absolute;
+   vertical-align: middle;
+   cursor: pointer;
+   background: @l-gray-color;
+   .rounded;
+   width: @checkbox-size;
+   height: @checkbox-size;
+   text-align: center;
+   margin: 0 10px 0 0;
     
-    i {display: none;}
+   i {display: none;}
   }
   
   .value {
@@ -402,19 +410,24 @@ button:active {
     color: @white-color;
     cursor: pointer;
   }
-
+  
+  input[type="radio"] + label:hover .radio-checker {
+    background: @white-color;  
+  }
+  
   input[type="radio"] + label .radio-checker {
     position: absolute;
     vertical-align: middle;
     text-align: center;
     cursor: pointer;
     background: @l-gray-color;
-    background: @white-color;
-    cursor:pointer;
+    cursor: pointer;
     width: @radio-button-size;
     height: @radio-button-size;
     line-height: @radio-button-size;
     .rounded(50%);
+    
+    i {display: none;}
   }
   
   .value {
@@ -422,7 +435,6 @@ button:active {
   }
   
   input[type="radio"]:checked + label .radio-checker {
-   background: @white-color;
    i {
       display: table;
       font-size: 0.813em;
