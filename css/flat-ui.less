@@ -7,6 +7,7 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 //Variables
 @first-bg-color: #1b242d;
 @second-bg-color: #0f1a24; 
+@checkbox-size: 1.250em;
 
 //Colors variables
 @white-color: #fff;
@@ -341,8 +342,8 @@ button:active {
 //Checkbox form
 .checkbox-item {
   display: table;
-  cursor: pointer;
   margin: 0 0 10px 0;
+  position: relative;
  
   input[type="checkbox"] {
     display:none;
@@ -350,23 +351,27 @@ button:active {
   
   input[type="checkbox"] + label {
     color: @white-color;
+    cursor: pointer;
   }
   
-  input[type="checkbox"] + label span {
-    display:inline-block;
+  input[type="checkbox"] + label .checker {
+    position: absolute;
     vertical-align:middle;
     cursor:pointer;
     background: @l-gray-color;
     .rounded;
-    width: 1.250em;
-    height: 1.250em;
+    width: @checkbox-size;
+    height: @checkbox-size;
     text-align: center;
     margin: 0 10px 0 0;
     
     i {display: none;}
   }
   
-  input[type="checkbox"]:checked + label span {
+  .value {
+    margin: 0 0 0 @checkbox-size + 0.625em
+  }
+  input[type="checkbox"]:checked + label .checker {
     background: @white-color;
     
     i {
@@ -377,4 +382,31 @@ button:active {
       width: 100%;
     }
   }
+}
+
+//Radio item 
+.radio-item {
+  input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(check_radio_sheet.png) -38px top no-repeat;
+    cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+    background:url(check_radio_sheet.png) -57px top no-repeat;
+}
 }
