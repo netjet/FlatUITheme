@@ -1,0 +1,380 @@
+//Imports
+@import "fonts/fonts.less";
+
+//Resets
+* {outline: none;}
+ul {list-style: none; margin: 0; padding: 0; left: 0;}
+//Variables
+@first-bg-color: #1b242d;
+@second-bg-color: #0f1a24; 
+
+//Colors variables
+@white-color: #fff;
+
+//Default-button-color 
+@default-button-color: #2b3845;
+@l-default-button-color: #31404f;
+@d-default-button-color: #212f3d;
+
+//Blue
+@d-blue-color: #1b242d;
+@blue-color: #2980b9;
+@l-blue-color: #3498db;
+@a-blue-color: #2b7aad; //color on press
+
+//Gray
+@l-gray-color: #ecf0f1;
+@d-gray-color: #bdc3c7;
+
+//Green
+@green-color: #078c52;
+@l-green-color: #00a95f;
+@d-green-color: #05804a;
+
+//Red 
+@red-color: #e84d4d;
+@l-red-color: #fc5858;
+@d-red-color: #d93e3e;
+
+//Pallete
+.blue {
+  background: @blue-color;
+  color: #fff;
+}
+
+.blue:hover,
+.blue:focus {
+  background: @l-blue-color;
+}
+
+.blue:active {
+  background: @a-blue-color;
+}
+
+.green {
+  background: @green-color;
+  color: #fff;
+}
+
+.green:hover,
+.green:focus {
+  background: @l-green-color;
+}
+
+.green:active {
+  background: @d-green-color;
+}
+
+.red {
+  background: @red-color;
+  color: #fff;
+}
+
+.red:hover,
+.red:focus {
+  background: @l-red-color;
+}
+
+.red:active {
+  background: @d-red-color;
+}
+
+//Sizes 
+.small {
+  height: 30px;
+  font-size: 0.938em;
+}
+
+.middle {
+  height: 2.500em;
+  font-size: 1em;
+}
+
+.big {
+  height: 50px;
+  font-size: 1.188em;
+}
+
+//Border radius
+@min-radius: 3px;
+.rounded(@radius: @min-radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+  -webkit-border-top-right-radius: @topright;
+  -webkit-border-bottom-right-radius: @bottomright;
+  -webkit-border-bottom-left-radius: @bottomleft;
+  -webkit-border-top-left-radius: @topleft;
+  -moz-border-radius-topright: @topright;
+  -moz-border-radius-bottomright: @bottomright;
+  -moz-border-radius-bottomleft: @bottomleft;
+  -moz-border-radius-topleft: @topleft;
+  border-top-right-radius: @topright;
+  border-bottom-right-radius: @bottomright;
+  border-bottom-left-radius: @bottomleft;
+  border-top-left-radius: @topleft;
+}
+
+//Transition
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+.outline(@first-axis: 0, @second-axis: 0px, @third-axis: 0, @blur: 2px, @out-color: @l-blue-color){
+  -webkit-box-shadow: @first-axis @second-axis @third-axis @blur @out-color;
+  -moz-box-shadow: @first-axis @second-axis @third-axis @blur @out-color;
+  box-shadow: @first-axis @second-axis @third-axis @blur @out-color;
+}
+
+
+//Placeholder {
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: @d-gray-color;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: @d-gray-color;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: @d-gray-color;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: @d-gray-color;
+}
+
+//common elements
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SegoeUI normal';
+  font-size: 100%;
+  line-height: 1.250em;
+  background-color: @first-bg-color;
+}
+
+h1 {
+  font-family: 'SegoeUI semilight';
+  font-size: 1.875em;
+  color: #fff;
+}
+
+b {
+  font-family: 'SegoeUI semibold';
+  color: @blue-color;
+}
+
+//Forms
+input[type="text"],
+input[type="password"] {
+  height: 2.500em;
+  background: @l-gray-color;
+  color: @d-blue-color;
+  padding: 0 10px;
+  border: 0;
+  font-family: 'SegoeUI semibold';
+  .rounded;
+  margin: 0 0 10px 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background: @white-color;
+  .outline;
+}
+
+textarea {
+  background: @l-gray-color;
+  color: @d-blue-color;
+  padding: 10px;
+  border: 0;
+  font-family: 'SegoeUI semibold';
+  .rounded;
+  margin: 0 0 10px 0;
+}
+
+textarea:focus {
+  background: @white-color;
+  .outline;
+}
+
+//selectors
+.select-form {
+  position: relative;
+
+  .selector {
+    display: table;
+    height: 2.500em;
+    background: @l-gray-color;
+    color: @d-blue-color;
+    padding: 0 10px;
+    border: 0;
+    font-family: 'SegoeUI semibold';
+    .rounded;
+    
+    .down-icon {
+      display: table-cell;
+      height: 2.500em;
+      vertical-align: middle;
+    }
+    
+     .up-icon {
+       display: none;
+     }
+  }      
+   .selector + .select-options { 
+     display: none;
+    }
+  
+  //selector hover
+  .selector:hover {
+     background: @white-color;
+     cursor: pointer;
+   }
+  
+  //selector focus
+  .selector:focus {
+     background: @white-color;
+     .outline;
+     
+     .up-icon {
+      display: table-cell;
+      height: 2.500em;
+      vertical-align: middle;
+     }
+     
+     .down-icon {
+       display: none;
+     }
+  }
+
+  //show dropdown list
+  .selector:focus + .select-options {
+       background: @white-color;
+       position: absolute;
+       display: table;
+       left: 0;
+       top: 0;
+       margin-top: 10px;
+       .rounded;
+     }
+     
+  i {
+    padding: 0 0 0 10px;
+  }
+  
+  .selected-value {
+    display: table-cell;
+    height: 2.500em;
+    vertical-align: middle;
+  }
+}
+
+//Buttons 
+button {
+  border: 0;
+  padding: 0 10px;
+  color: @white-color;
+  font-family: 'SegoeUI semibold';
+  background: @default-button-color;
+  .rounded;
+  .transition;
+}
+
+button:hover,
+button:focus {
+  background-color: @l-default-button-color;
+}
+
+button:active {
+  background-color: @d-default-button-color;
+}
+
+//Icon buttons 
+.icon i {
+  margin: 0 10px 0 0;
+}
+
+//Select-list 
+.selectable-list {
+  .rounded;
+  font-size: 0.938em;
+  width: 300px;
+  
+  ul {
+    overflow: hidden;
+    
+    li {
+      border-bottom: 1px solid @l-gray-color;
+      padding: 10px;
+    }
+    
+    li.selected,
+    li:hover {
+      background: @l-blue-color;
+      color: @white-color;
+      cursor: pointer;
+      border-bottom: 1px solid transparent;
+    }
+    
+    li:first-child {
+      .border-radius(@min-radius, 0, 0, @min-radius);
+    }
+    
+    li:last-child {
+      border-bottom: 0;
+      .border-radius(0, @min-radius, @min-radius, 0);
+    }
+  }
+}
+
+
+//Checkbox form
+.checkbox-item {
+  display: table;
+  cursor: pointer;
+  margin: 0 0 10px 0;
+ 
+  input[type="checkbox"] {
+    display:none;
+  }
+  
+  input[type="checkbox"] + label {
+    color: @white-color;
+  }
+  
+  input[type="checkbox"] + label span {
+    display:inline-block;
+    vertical-align:middle;
+    cursor:pointer;
+    background: @l-gray-color;
+    .rounded;
+    width: 1.250em;
+    height: 1.250em;
+    text-align: center;
+    margin: 0 10px 0 0;
+    
+    i {display: none;}
+  }
+  
+  input[type="checkbox"]:checked + label span {
+    background: @white-color;
+    
+    i {
+      display: table;
+      font-size: 1.125em;
+      color: @blue-color;
+      padding: 0.063em;
+      width: 100%;
+    }
+  }
+}
