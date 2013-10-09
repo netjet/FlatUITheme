@@ -8,6 +8,7 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 @first-bg-color: #1b242d;
 @second-bg-color: #0f1a24; 
 @checkbox-size: 1.250em;
+@radio-button-size: 1.188em;
 
 //Colors variables
 @white-color: #fff;
@@ -266,6 +267,7 @@ textarea:focus {
        left: 0;
        top: 0;
        margin-top: 10px;
+       z-index: 100;
        .rounded;
      }
      
@@ -356,8 +358,8 @@ button:active {
   
   input[type="checkbox"] + label .checker {
     position: absolute;
-    vertical-align:middle;
-    cursor:pointer;
+    vertical-align: middle;
+    cursor: pointer;
     background: @l-gray-color;
     .rounded;
     width: @checkbox-size;
@@ -369,8 +371,10 @@ button:active {
   }
   
   .value {
-    margin: 0 0 0 @checkbox-size + 0.625em
+    margin: 0 0 0 @checkbox-size + 0.625em;
+    font-size: 1em;
   }
+  
   input[type="checkbox"]:checked + label .checker {
     background: @white-color;
     
@@ -386,27 +390,45 @@ button:active {
 
 //Radio item 
 .radio-item {
+  display: table;
+  margin: 0 0 10px 0;
+  position: relative;
+  
   input[type="radio"] {
-    display:none;
-}
+      display:none;
+  }
 
-input[type="radio"] + label {
-    color:#f2f2f2;
-    font-family:Arial, sans-serif;
-    font-size:14px;
-}
+  input[type="radio"] + label {
+    color: @white-color;
+    cursor: pointer;
+  }
 
-input[type="radio"] + label span {
-    display:inline-block;
-    width:19px;
-    height:19px;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
-    background:url(check_radio_sheet.png) -38px top no-repeat;
+  input[type="radio"] + label .radio-checker {
+    position: absolute;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    background: @l-gray-color;
+    background: @white-color;
     cursor:pointer;
-}
-
-input[type="radio"]:checked + label span {
-    background:url(check_radio_sheet.png) -57px top no-repeat;
-}
+    width: @radio-button-size;
+    height: @radio-button-size;
+    line-height: @radio-button-size;
+    .rounded(50%);
+  }
+  
+  .value {
+    margin: 0 0 0 @checkbox-size + 0.625em
+  }
+  
+  input[type="radio"]:checked + label .radio-checker {
+   background: @white-color;
+   i {
+      display: table;
+      font-size: 0.813em;
+      color: @blue-color;
+      margin: (@radio-button-size - 0.813em) / 2 0;
+      width: 100%;
+    }
+  }
 }
