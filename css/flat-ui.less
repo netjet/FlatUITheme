@@ -4,6 +4,8 @@
 //Resets
 * {outline: none;}
 ul {list-style: none; margin: 0; padding: 0; left: 0;}
+
+
 //Variables
 @first-bg-color: #1b242d;
 @second-bg-color: #0f1a24; 
@@ -103,7 +105,10 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
   border-radius: @radius;
+  
+
 }
+
 
 .border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
   -webkit-border-top-right-radius: @topright;
@@ -135,7 +140,12 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 }
 
 
-//Placeholder {
+//Placeholder 
+.placeholder {
+  color: @d-gray-color;
+  line-height: 2.500em;
+}
+
 ::-webkit-input-placeholder { /* WebKit browsers */
   color: @d-gray-color;
 }
@@ -261,16 +271,17 @@ textarea:focus {
 
   //show dropdown list
   .selector:focus + .select-options {
-       background: @white-color;
        position: absolute;
        display: table;
        left: 0;
        top: 0;
        margin-top: 10px;
        z-index: 100;
-       .rounded;
      }
-     
+     .selector:focus + .select-options .selector-options {
+       background: @white-color;
+        .rounded;
+     }
   i {
     padding: 0 0 0 10px;
   }
@@ -434,6 +445,7 @@ button:active {
     margin: 0 0 0 @checkbox-size + 0.625em
   }
   
+  
   input[type="radio"]:checked + label .radio-checker {
    i {
       display: table;
@@ -443,4 +455,95 @@ button:active {
       width: 100%;
     }
   }
+}
+
+.form-holder {
+  position: relative;
+  display: table;
+}
+
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IE8 FIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.lt-ie9 {
+ //Checkbox form
+.checkbox-item {
+  input[type="checkbox"] {
+    display:table;
+    .rounded;
+     width: 1.125em;
+    height: 1.125em;
+     behavior: url(pie/PIE.htc);
+     border: 0!important;
+     background: transparent!important;
+     outline: none;
+     position: absolute;
+     z-index: 10;
+  }
+  
+  input[type="checkbox"] + label {
+    color: @white-color;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:focus {
+    .outline;  
+  }
+  
+  input[type="checkbox"] + label:hover .checker {
+    background: @white-color;
+    
+  }
+  
+  input[type="checkbox"] + label .checker {
+   position: absolute;
+   vertical-align: middle;
+   cursor: pointer;
+   background: @l-gray-color;
+   .rounded;
+   width: @checkbox-size;
+   height: @checkbox-size;
+   text-align: center;
+   margin: 0 10px 0 0;
+   behavior: url(pie/PIE.htc);
+   z-index: 5;
+    
+   i {display: none;}
+  }
+  
+  .value {
+    margin: 0 0 0 @checkbox-size + 0.625em;
+    font-size: 1em;
+  }
+  
+  input[type="checkbox"]:checked + label .checker {
+    background: @white-color;
+    
+    i {
+      display: table;
+      font-size: 1.125em;
+      color: @blue-color;
+      padding: 0.063em;
+      width: 100%;
+    }
+  }
+} 
+  
+  
+}
+
+
+.no-borderradius {
+  input {
+    position: relative;
+    line-height: 2.500em;
+  }
+  
+  textarea,
+  input,
+  button,
+  .selector-options {
+   behavior: url(pie/PIE.htc);
+  }
+  
+  
 }
