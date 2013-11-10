@@ -518,8 +518,6 @@ button:active {
   
   .switcher {
     position: absolute;
-    overflow:hidden;
-    width: auto;
   
     .checkbox { 
       display: none; 
@@ -532,6 +530,7 @@ button:active {
       width: 30px;
       height: @checkbox-size;
       background: #2b3845;
+      overflow: hidden;
       .transition;
       .rounded(@big-radius);
     }
@@ -743,4 +742,73 @@ code {
     text-align: center;
     padding: 20px 0;
   }
+}
+
+
+
+//accordion
+.ac-container {
+  text-align: left;
+
+  label{
+  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  z-index: 20;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: block;
+  cursor: pointer;
+  background-color: #212f3d;
+  color: @base-text-color;
+
+}
+  label:hover{
+  background: #2e3b47;
+}
+  input:checked + label,
+  input:checked + label:hover{
+  background: #212f3d;
+}
+  label:hover:after,
+  input:checked + label:hover:after{
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 7px;
+  background: transparent url(../images/arrow_down.png) no-repeat center center;  
+}
+  input:checked + label:hover:after{
+  background-image: url(../images/arrow_up.png);
+}
+  input{
+  display: none;
+}
+  article {
+  background-color: #0c141d;
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  .transition;
+  
+  p {
+    margin-left: 20px;
+  }
+}
+
+  input:checked ~ article{
+  .transition; 
+}
+  input:checked ~ article.ac-small{
+  height: 140px;
+}
+  input:checked ~ article.ac-medium{
+  height: 180px;
+}
+  input:checked ~ article.ac-large{
+  height: 230px;
+}
 }
