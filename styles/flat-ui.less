@@ -760,31 +760,59 @@ code {
   cursor: pointer;
   background-color: #212f3d;
   color: @base-text-color;
+  .transition;
+  
+  h4 {
+    margin: 0;
+    margin-left: 40px;
+  }
+  
+  i {
+    font-size: 1.1666666666666667em;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+  
+  .arrow-icon-right {
+    display: block;
+  }
+  
+  .arrow-icon-down {
+    display: none;
+  }
+  
 
 }
+
   label:hover{
   background: #2e3b47;
 }
   input:checked + label,
   input:checked + label:hover{
   background: #212f3d;
+  cursor: default;
 }
-  label:hover:after,
-  input:checked + label:hover:after{
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 13px;
-  top: 7px;
-  background: transparent url(../images/arrow_down.png) no-repeat center center;  
-}
-  input:checked + label:hover:after{
-  background-image: url(../images/arrow_up.png);
-}
+
+  input:checked + label {
+    .arrow-icon-right {
+      display: none;
+    }
+    .arrow-icon-down {
+      display: block;
+    }   
+  }
+  
+
+
   input{
   display: none;
 }
+
+  input:checked + label + article {
+    margin-bottom: 10px;
+  }
+  
   article {
   background-color: #0c141d;
   margin-top: -1px;
@@ -803,12 +831,7 @@ code {
   .transition; 
 }
   input:checked ~ article.ac-small{
-  height: 140px;
+  min-height: 250px;
 }
-  input:checked ~ article.ac-medium{
-  height: 180px;
-}
-  input:checked ~ article.ac-large{
-  height: 230px;
-}
+
 }
