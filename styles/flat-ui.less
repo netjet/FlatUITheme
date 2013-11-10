@@ -750,88 +750,89 @@ code {
 .ac-container {
   text-align: left;
 
-  label{
-  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-  position: relative;
-  z-index: 20;
-  padding: 10px;
-  margin-bottom: 10px;
-  display: block;
-  cursor: pointer;
-  background-color: #212f3d;
-  color: @base-text-color;
-  .transition;
-  
-  h4 {
-    margin: 0;
-    margin-left: 40px;
-  }
-  
-  i {
-    font-size: 1.1666666666666667em;
-    position: absolute;
-    top: 15px;
-    left: 20px;
-  }
-  
-  .arrow-icon-right {
+  label {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    z-index: 20;
+    padding: 10px;
+    margin-bottom: 10px;
     display: block;
-  }
+    cursor: pointer;
+    background-color: #212f3d;
+    border-left: 4px solid #212f3d;
+    color: @base-text-color;
+    .transition;
   
-  .arrow-icon-down {
-    display: none;
-  }
+    h4 {
+      margin: 0;
+      margin-left: 40px;
+    }
   
-
-}
-
+    i {
+      font-size: 1.1666666666666667em;
+      position: absolute;
+      top: 15px;
+      left: 20px;
+    }
+  
+    .arrow-icon-right {
+      display: block;
+    }
+  
+    .arrow-icon-down {
+      display: none;
+    }
+  }
+ 
   label:hover{
-  background: #2e3b47;
-}
+    background: #2e3b47;
+    border-left: 4px solid #2e3b47;
+  }
+
   input:checked + label,
   input:checked + label:hover{
-  background: #212f3d;
-  cursor: default;
-}
+    background: #212f3d;
+    cursor: default;
+    border-left: 4px solid #2980b9;
+  }
 
   input:checked + label {
     .arrow-icon-right {
       display: none;
     }
+    
     .arrow-icon-down {
       display: block;
     }   
   }
-  
-
-
+ 
   input{
-  display: none;
-}
+    display: none;
+  }
 
   input:checked + label + article {
     margin-bottom: 10px;
   }
   
   article {
-  background-color: #0c141d;
-  margin-top: -1px;
-  overflow: hidden;
-  height: 0px;
-  position: relative;
-  z-index: 10;
-  .transition;
+    background-color: #0c141d;
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    .transition;
   
-  p {
-    margin-left: 20px;
+    p {
+      margin-left: 20px;
+    }
   }
-}
 
   input:checked ~ article{
-  .transition; 
-}
+   .transition; 
+  }
+  
   input:checked ~ article.ac-small{
-  min-height: 250px;
-}
-
+   min-height: 250px;
+  }
 }
