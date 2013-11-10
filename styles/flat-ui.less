@@ -518,6 +518,8 @@ button:active {
   
   .switcher {
     position: absolute;
+    overflow:hidden;
+    width: auto;
   
     .checkbox { 
       display: none; 
@@ -530,13 +532,12 @@ button:active {
       width: 30px;
       height: @checkbox-size;
       background: #2b3845;
-      overflow: hidden;
       .transition;
       .rounded(@big-radius);
     }
     
     .checkbox:checked + .trigger { 
-      background: #078c52; 
+      background: #2980b9; 
     }
     
     .trigger:before {
@@ -545,9 +546,9 @@ button:active {
       top: 0; 
       left: 0; 
       bottom: 0;
-      width: 10px; 
-      height: 10px;
-      margin: auto 5px;
+      width: 12px; 
+      height: 12px;
+      margin: auto 4px;
       background-color: #556a7f;
       .transition;
       .rounded(@big-radius);
@@ -555,7 +556,7 @@ button:active {
     
     .checkbox:checked + .trigger:before { 
       left: 10px;
-      background-color: #0aca76;
+      background-color: #44b2fb;
     }
     
 
