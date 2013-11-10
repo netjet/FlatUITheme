@@ -103,6 +103,8 @@ button.big {
 }
 
 //Border radius
+@big-radius: 10px;
+@mid-radius: 5px;
 @min-radius: 3px;
 .rounded(@radius: @min-radius) {
   -webkit-border-radius: @radius;
@@ -508,6 +510,62 @@ button:active {
   display: table;
 }
 
+
+/* CHECKBOXES */
+.switcher-item {
+  position: relative;
+  margin: 0 0 10px 0;
+  
+  .switcher {
+    position: absolute;
+  
+    .checkbox { 
+      display: none; 
+    }
+    
+    .trigger {
+      cursor: pointer;
+      position: relative;
+      float: left;
+      width: 30px;
+      height: @checkbox-size;
+      background: #2b3845;
+      overflow: hidden;
+      .transition;
+      .rounded(@big-radius);
+    }
+    
+    .checkbox:checked + .trigger { 
+      background: #078c52; 
+    }
+    
+    .trigger:before {
+      content: '';
+      position: absolute;
+      top: 0; 
+      left: 0; 
+      bottom: 0;
+      width: 10px; 
+      height: 10px;
+      margin: auto 5px;
+      background-color: #556a7f;
+      .transition;
+      .rounded(@big-radius);
+    }
+    
+    .checkbox:checked + .trigger:before { 
+      left: 10px;
+      background-color: #0aca76;
+    }
+    
+
+  }
+      .value {
+      color: @base-text-color;
+      margin: 0 0 0 40px;
+      font-size: 1em;
+    }
+}
 //Code block
 pre {
   background-color: #0c141d;
