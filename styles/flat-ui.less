@@ -13,6 +13,10 @@
 @import "elements/images.less";
 @import "elements/navigation.less";
 
+//Widgets
+@import "widgets/tree.less";
+
+
 //Variables
 @first-bg-color: #1b242d;
 @second-bg-color: #0f1a24; 
@@ -44,6 +48,15 @@
 @base-links-color: #fff; //Цвет ссылки
 @base-links-color-hover: #3498db; //Цвет ссылки при наведении
 @base-links-color-current: #9db7d1; //Цвет активной ссылки
+
+//NAVIGATION
+@horizontal-navigation-margin: 0 20px 0 0; //Отступ в горизонтальном меню
+@navigation-font-size: 1.063em; //Размер шрифта в меню
+@navigation-current-background: rgba(0, 0, 0, 0.25); //Фон активного пункта меню
+@navigation-current-border-color: #2980b9; //Цвет бордера активного пункта меню
+@navigation-current-border-size: 3px; //Размер бордера активного пункта меню
+@navigation-links-padding: 9px 20px; //Внутренний отступ в пункте меню
+@navigation-icon-margin: 10px; //Отступ иконки в меню
 
 //Colors variables
 @white-color: #fff;
@@ -102,11 +115,12 @@
 @l-gray-color: #ecf0f1;
 
 
-
-
-
-
-
+//WIDGETS
+//TREE
+@tree-icon-size: 1.188em; //Размер иконки в ветке дерева
+@tree-icon-closed-color: #2980b9; //Цвет иконки открытой ветки
+@tree-icon-opened-color: #078c52; //Цвет иконки закрытой ветки
+@tree-icon-position: 7px; //Отступ иконки в ветке
 
 
 
@@ -743,130 +757,11 @@ code {
  
 
 
-//Tree
-ol.tree {
-  margin: 0;
-  padding: 0;
-  color: @base-text-color;
-  
-  
-  li {
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    
-    i {
-      position: absolute;
-      left: 7px;
-      top: 7px;
-      color: #2980b9;
-      font-size: 1.188em;
-    }
-    
-    i.opened {
-      color: #078c52;
-      display: none;
-    }
-  }
-  
-  li.tree-item {
-    margin-left: -1px !important;
-  }
-  
-  
-  li.tree-item a {
-    padding-left: 26px;
-    display: block;
-    
-    i {
-      color: #fff;
-      position: relative;
-      font-size: 0.875em;
-      top: 0;
-      left: 0;
-      margin-right: 10px;
-    }
-  }
-  
- 
-  li input {
-    position: absolute;
-    left: 0;
-    margin-left: 0;
-    opacity: 0;
-    z-index: 2;
-    cursor: pointer;
-    height: 2em;
-    width: 2em;
-    top: 0;
-  }
-  
-  li input + i + i + ol {
-    margin: 0;
-    height: auto;
-  }
-  
-  li input + i + i + ol > li {
-    display: none;
-    margin-left: -14px!important;
-    padding-left: 1px;
-  }
-  
-  li label:hover {
-    background-color: #212f3d;
-  }
-  
-  li label {
-    cursor: pointer;
-    display: table-cell;
-    padding: 5px 10px 5px 40px;
-    .rounded(@mid-radius);
-    .transition;
-  }
-  
-    li input:checked + i.closed {
-    display: none;
-  }
-  
-  li input:checked + i + i.opened {
-    display: block;
-  }
-  
-  li input:checked + i + i + ol {
-    margin: -1.25em 0 0 -44px; /* 20px */
-    padding: 1.563em 0 0 80px;
-    height: auto;
-  }
-  
-  li input:checked + i + i + ol > li {
-    display: block;
-    margin: 0 0 7px; /* 2px */
-  }
-  
-  li input:checked + i + i + ol > li:last-child {
-    margin: 0 0 10px; /* 1px */
-  }
-}
 
 
 
-//Navigation
-.navigation {
-  overflow: hidden;
-  
-  ul {
-    li {
-      a {
-        display: block;
-        padding: 9px 20px;
-        
-        i {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-}
+
+
 
 
 
