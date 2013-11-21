@@ -1,4 +1,5 @@
 //Imports
+@import "common-resets.less";
 @import "fonts/fonts.less";
 @import "onepcssgrid.less";
 @import "mixin.less";
@@ -9,11 +10,8 @@
 @import "elements/text.less";
 @import "elements/inputs.less";
 @import "elements/buttons.less";
-
-//Resets
-* {outline: none;}
-ul {list-style: none; margin: 0; padding: 0; left: 0;}
-
+@import "elements/images.less";
+@import "elements/navigation.less";
 
 //Variables
 @first-bg-color: #1b242d;
@@ -37,16 +35,12 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 @textarea-padding: 10px; //Внутренний отступ в текстарее
 @placeholder-color: #bdc3c7; //Цвет текста плейсхолдера
 
-//font 
+//FONTS 
 @title-font-weight: 'SegoeUI semilight';
 @bold-font-weigh: 'SegoeUI semibold';
+@normal-font-weigh: 'SegoeUI normal';
 
-//States
-.underlined {
-  text-decoration: underline;
-}
-
-//Links colors
+//LINKS
 @base-links-color: #fff; //Цвет ссылки
 @base-links-color-hover: #3498db; //Цвет ссылки при наведении
 @base-links-color-current: #9db7d1; //Цвет активной ссылки
@@ -55,11 +49,21 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 @white-color: #fff;
 @base-text-color: #fff;
 
-//Border radius
+//BORDER-RADIUS
 @big-radius: 10px; //Большой радиус
 @mid-radius: 5px; //Средний радиус
 @min-radius: 3px; //Маленький радиус
 
+
+//IMAGES 
+@image-border-size: 1px; //Размер бордера у картинки
+@image-border-color: #556a7f; //Цвет бордера у картинки
+@image-inner-padding: 10px; //Внутренний отступ картинки
+@image-border-radius: 10%; //Радиус изображения
+
+//OUTLINE 
+@outline-color: #3498db; //Цвет обводки
+@outline-size: 2px; //Размер обводки
 
 //BUTTONS
 @button-padding: 0 15px; //Внутренние отступы кнопки
@@ -88,11 +92,6 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 @red-button-color: #e84d4d; //Оттенок крассной кнопки
 
 
-
-
-
-
-
 //Blue
 @d-blue-color: #1b242d;
 @blue-color: #2980b9;
@@ -107,54 +106,11 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 
 
 
-.outline(@first-axis: 0, @second-axis: 0px, @third-axis: 0, @blur: 2px, @out-color: @l-blue-color){
-  -webkit-box-shadow: @first-axis @second-axis @third-axis @blur @out-color;
-  -moz-box-shadow: @first-axis @second-axis @third-axis @blur @out-color;
-  box-shadow: @first-axis @second-axis @third-axis @blur @out-color;
-}
 
 
 
 
-//common elements
-* {
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'SegoeUI normal';
-  font-size: 100%;
-  line-height: @base-line;
-  background-color: @first-bg-color;
-  color: @base-text-color;
-}
-
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
 
 
 //selectors
@@ -912,113 +868,6 @@ ol.tree {
   }
 }
 
-//Horizontal navigation
-.hor-navigation {
-  ul {
-    padding: 0;
-    
-    li {
-      float: left;
-      margin: 0 20px 0 0;
-      font-size: 1.063em;
-      .rounded(@mid-radius);
-      .transition;
-    }
-    
-    li.current {
-      background-color: rgba(0, 0, 0, 0.25);
-      
-      a {
-        cursor: default;
-        color: @base-links-color-current;
-      }
-      
-      a:hover {
-        text-decoration: none;
-        color: @base-links-color-current;
-      }
-    }
-  }
-}
-
-//Vertical navigation
-.ver-navigation {
-  ul {
-    padding: 0;
-    clear: both;
-    
-    li {
-      margin: 0 20px 0 0;
-      font-size: 1.063em;
-      display: block;
-      .transition;
-      border-left: 3px solid transparent;
-    }
-    
-    li.current {
-      background-color: rgba(0, 0, 0, 0.25);
-      border-left: 3px solid #2980b9;
-      
-      a {
-        cursor: default;
-        color: @base-links-color-current;
-      }
-      
-      a:hover {
-        text-decoration: none;
-        color: @base-links-color-current;
-      }
-    }
-  }
-}
 
 
-//Images
-.image {
-  img {
-    width: 100%;
-  }
-}
 
-.img-rounded {
-  img {
-    .rounded(10%);
-  }
-}
-
-.img-rounded-top {
-  img {
-    .rounded(10% 10% 0 0);
-  }
-}
-
-.img-rounded-left {
-  img {
-    .rounded(10% 0 0 10%);
-  }
-}
-
-.img-rounded-bottom {
-  img {
-    .rounded(0 0 10% 10%);
-  }
-}
-
-.img-rounded-right {
-  img {
-    .rounded(0 10% 10% 0);
-  }
-}
-
-.img-circled {
-  img {
-    .rounded(50%);
-  }
-}
-
-.img-bordered {
-  img {
-    border: 1px solid #556a7f;
-    padding: 10px;
-  }
-}
