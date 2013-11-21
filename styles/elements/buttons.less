@@ -12,11 +12,11 @@ button {
 
 button:hover,
 button:focus {
-  background-color: @button-background-hover;
+  background: lighten(@button-background, 5%);
 }
 
 button:active {
-  background-color: @button-background-active;
+  background: darken(@button-background, 3%);
 }
 
 //Sizes
@@ -39,12 +39,12 @@ button:active {
 //blue
 .btn-blue {
   background: @blue-button-color;
-  color: #fff;
+  color: @button-text-color;
 }
 
 .btn-blue:hover,
 .btn-blue:focus {
-  background: lighten(@blue-button-color, 5%);
+  background: lighten(@blue-button-color, 7%);
 }
 
 .btn-blue:active {
@@ -54,7 +54,7 @@ button:active {
 //green
 .btn-green {
   background: @green-button-color;
-  color: #fff;
+  color: @button-text-color;
 }
 
 .btn-green:hover,
@@ -66,17 +66,23 @@ button:active {
   background: darken(@green-button-color, 5%);
 }
 
-//Red
+//red
 .btn-red {
   background: @red-button-color;
-  color: #fff;
+  color: @button-text-color;
 }
 
 .btn-red:hover,
 .btn-red:focus {
-  background: lighten(@red-button-color, 5%);
+  background: lighten(@red-button-color, 4%);
 }
 
 .btn-red:active {
-  background: darken(@red-button-color, 5%);
+  background: darken(@red-button-color, 4%);
+}
+
+
+//Icon buttons 
+.btn-icon i + span {
+  margin: 0 0 0 10px;
 }

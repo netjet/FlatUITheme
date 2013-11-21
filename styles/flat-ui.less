@@ -35,6 +35,7 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 @input-focus-background: #fff; //Фон инпута
 @input-text-color: #1b242d; // Цвет текста в инпуте
 @textarea-padding: 10px; //Внутренний отступ в текстарее
+@placeholder-color: #bdc3c7; //Цвет текста плейсхолдера
 
 //font 
 @title-font-weight: 'SegoeUI semilight';
@@ -54,13 +55,16 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 @white-color: #fff;
 @base-text-color: #fff;
 
+//Border radius
+@big-radius: 10px; //Большой радиус
+@mid-radius: 5px; //Средний радиус
+@min-radius: 3px; //Маленький радиус
 
-//Buttons
+
+//BUTTONS
 @button-padding: 0 15px; //Внутренние отступы кнопки
 @button-text-color: #fff; // Цвет текста кнопки
 @button-background: #2b3845; //Цвет стандартной кнопки
-@button-background-hover: #31404f; //Цвет кнопки при наведении
-@button-background-active: #212f3d; //Цвет кнопки при нажатии
 
 //small button vars
 @small-button-size: 2.000em; //Размер маленькой кнопки
@@ -78,10 +82,16 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 @blue-button-color: #2980b9; //Оттенок синей кнопки
 
 //Green button color
-@green-button-color: #078c52;
+@green-button-color: #078c52; //Оттенок зеленой кнопки
 
 //Red button color
-@red-button-color: #e84d4d;
+@red-button-color: #e84d4d; //Оттенок крассной кнопки
+
+
+
+
+
+
 
 //Blue
 @d-blue-color: #1b242d;
@@ -91,54 +101,9 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 
 //Gray
 @l-gray-color: #ecf0f1;
-@d-gray-color: #bdc3c7;
-
-//Green
-@green-color: #078c52;
-@l-green-color: #00a95f;
-@d-green-color: #05804a;
-
-//Red 
-@red-color: #e84d4d;
-@l-red-color: #fc5858;
-@d-red-color: #d93e3e;
 
 
 
-.green {
-  background: @green-color;
-  color: #fff;
-}
-
-.green:hover,
-.green:focus {
-  background: @l-green-color;
-}
-
-.green:active {
-  background: @d-green-color;
-}
-
-.red {
-  background: @red-color;
-  color: #fff;
-}
-
-.red:hover,
-.red:focus {
-  background: @l-red-color;
-}
-
-.red:active {
-  background: @d-red-color;
-}
-
-
-
-//Border radius
-@big-radius: 10px;
-@mid-radius: 5px;
-@min-radius: 3px;
 
 
 
@@ -149,27 +114,7 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 }
 
 
-//Placeholder 
-.placeholder {
-  color: @d-gray-color;
-  line-height: 2.500em;
-}
 
-::-webkit-input-placeholder { /* WebKit browsers */
-  color: @d-gray-color;
-}
-
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: @d-gray-color;
-}
-
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: @d-gray-color;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-  color: @d-gray-color;
-}
 
 //common elements
 * {
@@ -286,14 +231,6 @@ body {
   }
 }
 
-
-
-
-
-//Icon buttons 
-.icon i {
-  margin: 0 10px 0 0;
-}
 
 //Select-list 
 .selectable-list {
