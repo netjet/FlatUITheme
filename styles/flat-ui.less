@@ -1,6 +1,14 @@
 //Imports
 @import "fonts/fonts.less";
 @import "onepcssgrid.less";
+@import "mixin.less";
+
+//Base elements
+@import "elements/titles.less";
+@import "elements/links.less";
+@import "elements/text.less";
+@import "elements/inputs.less";
+@import "elements/buttons.less";
 
 //Resets
 * {outline: none;}
@@ -14,14 +22,66 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 @radio-button-size: 1.188em;
 @base-line: 1.375em;
 
+//paragraph vars
+@p-max-width: 33em; //Макаимальная ширина абзаца
+@p-text-ident: 1em; //Ширина отступа в абзаце
+
+
+//form vars
+@input-height: 2.250em; //Высота инпута
+@input-padding: 0 10px; //Внутренние отступы в инпуте
+@input-margin: 0 0 10px; // Внешние отступы в инпуте
+@input-background: #ecf0f1; //Фон инпута
+@input-focus-background: #fff; //Фон инпута
+@input-text-color: #1b242d; // Цвет текста в инпуте
+@textarea-padding: 10px; //Внутренний отступ в текстарее
+
+//font 
+@title-font-weight: 'SegoeUI semilight';
+@bold-font-weigh: 'SegoeUI semibold';
+
+//States
+.underlined {
+  text-decoration: underline;
+}
+
+//Links colors
+@base-links-color: #fff; //Цвет ссылки
+@base-links-color-hover: #3498db; //Цвет ссылки при наведении
+@base-links-color-current: #9db7d1; //Цвет активной ссылки
+
 //Colors variables
 @white-color: #fff;
 @base-text-color: #fff;
 
-//Default-button-color 
-@default-button-color: #2b3845;
-@l-default-button-color: #31404f;
-@d-default-button-color: #212f3d;
+
+//Buttons
+@button-padding: 0 15px; //Внутренние отступы кнопки
+@button-text-color: #fff; // Цвет текста кнопки
+@button-background: #2b3845; //Цвет стандартной кнопки
+@button-background-hover: #31404f; //Цвет кнопки при наведении
+@button-background-active: #212f3d; //Цвет кнопки при нажатии
+
+//small button vars
+@small-button-size: 2.000em; //Размер маленькой кнопки
+@small-button-text-size: 0.938em; //Раземер текста маленькой кнопки
+
+//middle button vars
+@middle-button-size: 2.500em; //Размер средней кнопки
+@middle-button-text-size: 1em; //Раземер текста средней кнопки
+
+//big button vars
+@big-button-size: 2.625em; //Размер большой кнопки
+@big-button-text-size: 1.188em; //Раземер текста большой кнопки
+
+//blue button color
+@blue-button-color: #2980b9; //Оттенок синей кнопки
+
+//Green button color
+@green-button-color: #078c52;
+
+//Red button color
+@red-button-color: #e84d4d;
 
 //Blue
 @d-blue-color: #1b242d;
@@ -43,20 +103,7 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
 @l-red-color: #fc5858;
 @d-red-color: #d93e3e;
 
-//Pallete
-.blue {
-  background: @blue-color;
-  color: #fff;
-}
 
-.blue:hover,
-.blue:focus {
-  background: @l-blue-color;
-}
-
-.blue:active {
-  background: @a-blue-color;
-}
 
 .green {
   background: @green-color;
@@ -86,55 +133,14 @@ ul {list-style: none; margin: 0; padding: 0; left: 0;}
   background: @d-red-color;
 }
 
-//Sizes 
-button.small {
-  height: 2.000em;
-  font-size: 0.938em;
-}
 
-button.middle {
-  height: 2.500em;
-  font-size: 1em;
-}
-
-button.big {
-  height: 2.625em;
-  font-size: 1.188em;
-}
 
 //Border radius
 @big-radius: 10px;
 @mid-radius: 5px;
 @min-radius: 3px;
-.rounded(@radius: @min-radius) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  border-radius: @radius;
-}
 
 
-.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
-  -webkit-border-top-right-radius: @topright;
-  -webkit-border-bottom-right-radius: @bottomright;
-  -webkit-border-bottom-left-radius: @bottomleft;
-  -webkit-border-top-left-radius: @topleft;
-  -moz-border-radius-topright: @topright;
-  -moz-border-radius-bottomright: @bottomright;
-  -moz-border-radius-bottomleft: @bottomleft;
-  -moz-border-radius-topleft: @topleft;
-  border-top-right-radius: @topright;
-  border-bottom-right-radius: @bottomright;
-  border-bottom-left-radius: @bottomleft;
-  border-top-left-radius: @topleft;
-}
-
-//Transition
-.transition(@duration:0.2s, @ease:ease-out) {
-  -webkit-transition: all @duration @ease;
-  -moz-transition: all @duration @ease;
-  -o-transition: all @duration @ease;
-  transition: all @duration @ease;
-}
 
 .outline(@first-axis: 0, @second-axis: 0px, @third-axis: 0, @blur: 2px, @out-color: @l-blue-color){
   -webkit-box-shadow: @first-axis @second-axis @third-axis @blur @out-color;
@@ -175,94 +181,36 @@ body {
   font-size: 100%;
   line-height: @base-line;
   background-color: @first-bg-color;
-}
-
-//Titles
-h1, h2, h3, h4 {
-   font-family: 'SegoeUI semilight';
-   color: @base-text-color;
-}
-
-h1 {
-  margin: 0;
-  font-size: 1.6666666666666667em;
-  line-height: 1.1em;
-  margin-bottom: 1.1em;
-}
-
-h2 {
-  margin: 0;
-  font-size: 1.5em;
-  line-height: 1.2222222222222223em;
-  margin-bottom: 1.2222222222222223em;
-}
-h3 {
-  margin: 0;
-  font-size: 1.3333333333333333em;
-  line-height: 1.375em;
-  margin-bottom: 1.375em;
-}
-h4 {
-  margin: 0;
-  font-size: 1.1666666666666667em;
-  line-height: 1.5714285714285714em;
-  margin-bottom: 1.5714285714285714em;
-}
-
-p.small {
-  margin: 0;
-  font-size: 0.8333333333333334em;
-  line-height: 2.2em;
-  margin-bottom: 2.2em;
-}
-
-p {
-  text-indent: 1em;
-  font-size: 1em;
-  line-height: 1.8333333333333333em;
-  margin-bottom: 1.8333333333333333em;
   color: @base-text-color;
-  max-width: 33em;
 }
 
-b {
-  font-family: 'SegoeUI semibold';
-  color: @blue-color;
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
-//Forms
-input[type="text"],
-input[type="password"] {
-  height: 2.250em;
-  background: @l-gray-color;
-  color: @d-blue-color;
-  padding: 0 10px;
-  border: 0;
-  font-family: 'SegoeUI semibold';
-  .rounded;
-  margin: 0 0 10px 0;
+.cf:after {
+    clear: both;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
-  background: @white-color;
-  .outline;
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
 
-textarea {
-  background: @l-gray-color;
-  color: @d-blue-color;
-  padding: 10px;
-  border: 0;
-  font-family: 'SegoeUI semibold';
-  .rounded;
-  margin: 0 0 10px 0;
-}
-
-textarea:focus {
-  background: @white-color;
-  .outline;
-}
 
 //selectors
 .select-form {
@@ -338,26 +286,9 @@ textarea:focus {
   }
 }
 
-//Buttons 
-button {
-  border: 0;
-  padding: 0 10px;
-  color: @white-color;
-  font-family: 'SegoeUI semibold';
-  background: @default-button-color;
-  cursor: pointer;
-  .rounded;
-  .transition;
-}
 
-button:hover,
-button:focus {
-  background-color: @l-default-button-color;
-}
 
-button:active {
-  background-color: @d-default-button-color;
-}
+
 
 //Icon buttons 
 .icon i {
@@ -376,6 +307,7 @@ button:active {
     li {
       border-bottom: 1px solid @l-gray-color;
       padding: 10px;
+      color: #1b242d;
     }
     
     li.selected,
@@ -948,14 +880,9 @@ ol.tree {
     margin-left: -1px !important;
   }
   
-  li.tree-item a:hover {
-    text-decoration: underline;
-  }
   
   li.tree-item a {
-    color: #fff;
     padding-left: 26px;
-    text-decoration: none;
     display: block;
     
     i {
@@ -976,15 +903,14 @@ ol.tree {
     opacity: 0;
     z-index: 2;
     cursor: pointer;
-    height: 1em;
-    width: 1em;
+    height: 2em;
+    width: 2em;
     top: 0;
   }
   
   li input + i + i + ol {
     margin: 0;
     height: auto;
-    
   }
   
   li input + i + i + ol > li {
@@ -1002,6 +928,7 @@ ol.tree {
     display: table-cell;
     padding: 5px 10px 5px 40px;
     .rounded(@mid-radius);
+    .transition;
   }
   
     li input:checked + i.closed {
@@ -1025,5 +952,136 @@ ol.tree {
   
   li input:checked + i + i + ol > li:last-child {
     margin: 0 0 10px; /* 1px */
+  }
+}
+
+
+
+//Navigation
+.navigation {
+  overflow: hidden;
+  
+  ul {
+    li {
+      a {
+        display: block;
+        padding: 9px 20px;
+        
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+//Horizontal navigation
+.hor-navigation {
+  ul {
+    padding: 0;
+    
+    li {
+      float: left;
+      margin: 0 20px 0 0;
+      font-size: 1.063em;
+      .rounded(@mid-radius);
+      .transition;
+    }
+    
+    li.current {
+      background-color: rgba(0, 0, 0, 0.25);
+      
+      a {
+        cursor: default;
+        color: @base-links-color-current;
+      }
+      
+      a:hover {
+        text-decoration: none;
+        color: @base-links-color-current;
+      }
+    }
+  }
+}
+
+//Vertical navigation
+.ver-navigation {
+  ul {
+    padding: 0;
+    clear: both;
+    
+    li {
+      margin: 0 20px 0 0;
+      font-size: 1.063em;
+      display: block;
+      .transition;
+      border-left: 3px solid transparent;
+    }
+    
+    li.current {
+      background-color: rgba(0, 0, 0, 0.25);
+      border-left: 3px solid #2980b9;
+      
+      a {
+        cursor: default;
+        color: @base-links-color-current;
+      }
+      
+      a:hover {
+        text-decoration: none;
+        color: @base-links-color-current;
+      }
+    }
+  }
+}
+
+
+//Images
+.image {
+  img {
+    width: 100%;
+  }
+}
+
+.img-rounded {
+  img {
+    .rounded(10%);
+  }
+}
+
+.img-rounded-top {
+  img {
+    .rounded(10% 10% 0 0);
+  }
+}
+
+.img-rounded-left {
+  img {
+    .rounded(10% 0 0 10%);
+  }
+}
+
+.img-rounded-bottom {
+  img {
+    .rounded(0 0 10% 10%);
+  }
+}
+
+.img-rounded-right {
+  img {
+    .rounded(0 10% 10% 0);
+  }
+}
+
+.img-circled {
+  img {
+    .rounded(50%);
+  }
+}
+
+.img-bordered {
+  img {
+    border: 1px solid #556a7f;
+    padding: 10px;
   }
 }

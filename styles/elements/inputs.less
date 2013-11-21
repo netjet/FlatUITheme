@@ -1,0 +1,35 @@
+//Inputs
+input[type="text"],
+input[type="password"] {
+  height: @input-height;
+  background: @input-background;
+  color: @input-text-color;
+  padding: @input-padding;
+  border: 0;
+  font-family: @bold-font-weigh;
+  margin: @input-margin;
+  .rounded;
+  .transition;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background: @input-focus-background;
+  .outline;
+}
+
+textarea {
+  background: @input-background;
+  color: @input-text-color;
+  padding: @textarea-padding;
+  border: 0;
+  font-family: @bold-font-weigh;
+  margin: @input-margin;
+  .rounded;
+  .transition;
+}
+
+textarea:focus {
+  background: @white-color;
+  .outline;
+}

@@ -1,0 +1,82 @@
+//Buttons 
+button {
+  border: 0;
+  padding: @button-padding;
+  color: @button-text-color;
+  font-family: @bold-font-weigh;
+  background: @button-background;
+  cursor: pointer;
+  .rounded;
+  .transition;
+}
+
+button:hover,
+button:focus {
+  background-color: @button-background-hover;
+}
+
+button:active {
+  background-color: @button-background-active;
+}
+
+//Sizes
+.btn-small {
+  height: @small-button-size;
+  font-size: @small-button-text-size;
+}
+
+.btn-middle {
+  height: @middle-button-size;
+  font-size: @middle-button-text-size;
+}
+
+.btn-big {
+  height: @big-button-size;
+  font-size: @big-button-text-size;
+}
+
+//Colors button
+//blue
+.btn-blue {
+  background: @blue-button-color;
+  color: #fff;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+  background: lighten(@blue-button-color, 5%);
+}
+
+.btn-blue:active {
+  background: darken(@blue-button-color, 5%);
+}
+
+//green
+.btn-green {
+  background: @green-button-color;
+  color: #fff;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+  background: lighten(@green-button-color, 5%);
+}
+
+.btn-green:active {
+  background: darken(@green-button-color, 5%);
+}
+
+//Red
+.btn-red {
+  background: @red-button-color;
+  color: #fff;
+}
+
+.btn-red:hover,
+.btn-red:focus {
+  background: lighten(@red-button-color, 5%);
+}
+
+.btn-red:active {
+  background: darken(@red-button-color, 5%);
+}
