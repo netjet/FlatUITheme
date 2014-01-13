@@ -1,0 +1,33 @@
+/*  PROGRESS BAR*/
+.progress-bar-holder {
+  height: 20px;
+  padding: 3px;
+  background-color: @progress-bar-holder-background;
+  .rounded(@big-radius);
+    
+  .progress-bar-loader {
+    background-color: @progress-bar-loader-background;
+    height: 14px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    .transition;
+    .rounded(@big-radius);
+    
+    .progress-bar-status {
+      font-size: 0.8333333333333334em;
+      position: absolute;
+      top: 0;
+      line-height: 14px;
+    }
+  }
+}
+
+.progress-bar-holder.small {
+    height: 7px;
+    padding: 2px;
+ 
+    .progress-bar-loader {
+    height: 3px;
+  }
+}
