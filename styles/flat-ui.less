@@ -17,7 +17,7 @@
 
 //Widgets - сформированны из простых элементов
 @import "widgets/tree.less";
-
+@import "widgets/media-list.less";
 
 
 //Variables
@@ -34,6 +34,7 @@
 
 //form vars
 @input-height: 2.250em; //Высота инпута
+@input-width: 200px; //Ширина инпута
 @input-padding: 0 10px; //Внутренние отступы в инпуте
 @input-margin: 0 0 10px; // Внешние отступы в инпуте
 @input-background: #ecf0f1; //Фон инпута
@@ -128,7 +129,6 @@
 @tree-icon-closed-color: #2980b9; //Цвет иконки открытой ветки
 @tree-icon-opened-color: #078c52; //Цвет иконки закрытой ветки
 @tree-icon-position: 7px; //Отступ иконки в ветке
-
 @tree-item-icon-size: 0.875em; //Размер иконки в пункте меню
 @tree-item-icon-margin: 10px; //Размер иконки в пункте меню
 
@@ -356,49 +356,36 @@
   position: relative;
   display: table; 
   
-}
-
-
-/*MEDIA LIST*/
-.media-list.hoverable {
-  .media-list-item:hover{
-  background-color: #212f3d;
-  cursor: pointer;
-  }
-}
-
-.media-list {
-  .media-list-item.selected {
-    border-left: 3px solid #2980b9;
-    background-color: #0c141d;
+  //INPUT WITH ICON BUTTON
+  .icon-input-button {
+    position: absolute;
+    right: 0;
+    padding: 0 10px;
+    height: @input-height;
+    background: none!important;
+    color: #627C94;
+    margin: 0;
   }
   
-  .media-list-item {
-    position: relative;
-    padding: 10px;
-    overflow: hidden;
-    .transition;
-    
-    .image {
-      width: 40px;
-      position: absolute;
-    }
-    
-    .image + .media-list-content {
-      margin-left: 55px;
-      float: left;
-    }
-    
-    .media-list-content {
-      min-height:  40px;
-      
-      p {
-        margin: 0;
-        text-indent: 0;
-      }
-    }
+  .icon-input-button + .icon-input-button {
+    position: absolute;
+    height: @input-height;
+    background: none!important;
+    color: #627C94;
+    right: 30px;
+    padding: 0;
   }
-}
+  
+  .icon-input-button + input {
+    padding-right: 30px;
+  }
+  
+  .icon-input-button + .icon-input-button + input {
+    padding-right: 60px;
+  }
+} 
+
+
 
 /* CHECKBOXES */
 .switcher-item {
@@ -805,7 +792,6 @@ code {
   }
 }
  
-
 
 
 
