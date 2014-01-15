@@ -1,0 +1,60 @@
+//loaders
+.loader {
+  position: relative;
+
+  .spinner { 
+    cursor: wait;
+    border-radius: @loader-spinner-size;
+    animation: loading 4s infinite linear;
+    -moz-animation: loading 4s infinite linear;
+    -webkit-animation: loading 4s infinite linear;
+  }
+  
+  .spin-1{
+    border: @loader-spinner-border-size dashed @loader-spinner-color;
+    width: @loader-spinner-size;
+    height: @loader-spinner-size; 
+    position: relative;
+    z-index: 5000;
+  }
+  
+  .spinner-icon {
+    position: absolute;
+    top: @loader-spinner-size / 2.9047;
+    left: @loader-spinner-size / 3.2105;
+    color: @loader-spinner-color;
+    font-size: 1.438em;
+    z-index: 5100;
+    cursor: wait;
+  }
+}
+
+ @keyframes loading {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+ @-moz-keyframes loading {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}

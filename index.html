@@ -14,8 +14,8 @@
 
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
+		<!-- <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css"> -->
 		<link rel="stylesheet/less" type="text/css" href="styles/flat-ui.less">
 		<link rel="stylesheet/less" type="text/css" href="styles/fonts/font-awesome/less/font-awesome.less"/>
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -61,20 +61,27 @@
 					<div class="form-holder">
 						<input type="text" placeholder="Логин" class="middle" />
 						<br/>
-					</div>
+					</div>              
+					
 					<div class="form-holder">
 						<input type="password" placeholder="Пароль" class="middle"/>
 						<br/>
 					</div>
 					<div class="form-holder">
 						<button class="icon-input-button"><i class="fa fa-search"></i></button>
-						<input type="text" placeholder="Логин" class="middle" />
+						<input type="text" placeholder="Поиск" class="middle" />
 						<br/>
 					</div>
 					<div class="form-holder">
 						<button class="icon-input-button"><i class="fa fa-search"></i></button>
 						<button class="icon-input-button"><i class="fa fa-star"></i></button>
-						<input type="text" placeholder="Логин" class="middle" />
+						<input type="text" placeholder="Значение" class="middle" />
+						<br/>
+					</div>
+					<div class="form-holder numeric-field">
+						<button class="icon-input-button"><i class="fa fa-caret-up"></i></button>
+						<button class="icon-input-button"><i class="fa fa-caret-down"></i></button>
+						<input type="text" placeholder="0" class="middle" />
 						<br/>
 					</div>
 					<div class="form-holder">
@@ -277,7 +284,7 @@
 				<div class="col9 last">
 					<br/>
 					<br/>
-					<section class="ac-container">
+					<section class="accordion-holder">
 						<div>
 							<input id="ac-1" name="accordion-1" type="radio" checked />
 							<label for="ac-1"><i class="arrow-icon-right fa fa-angle-right"></i><i class="arrow-icon-down fa fa-angle-down"></i><h4>Пункт 1</h4></label>

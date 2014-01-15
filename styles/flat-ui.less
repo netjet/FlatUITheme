@@ -14,16 +14,19 @@
 @import "elements/images.less";
 @import "elements/navigation.less";
 @import "elements/progress-bar.less";
+@import 'elements/loader.less';
+@import 'elements/checkbox.less';
 
 //Widgets - сформированны из простых элементов
 @import "widgets/tree.less";
 @import "widgets/media-list.less";
-
+@import "widgets/numeric-field.less";
+@import "widgets/tabs.less";
+@import "widgets/accordion.less";
 
 //Variables
 @first-bg-color: #1b242d;
 @second-bg-color: #0f1a24; 
-@checkbox-size: 1.250em;
 @radio-button-size: 1.188em;
 @base-line: 1.375em;
 
@@ -66,6 +69,26 @@
 @progress-bar-holder-background: #2b3845;
 @progress-bar-loader-background: #44b2fb;
 
+//TABS 
+@tabs-navigation-background: #212f3d;
+@tabs-navagation-hover-background: #2e3b47;
+@tabs-navigation-border-size: 4px;
+@tabs-navigation-selected-border-color: #2980b9;
+@tabs-content-background: #0c141d;
+@tabs-navigation-height: 50px;
+
+//ACCORDION
+@accodrion-label-background: #212f3d;
+@accordion-border-size: 4px;
+@accordion-label-hover-background: #2e3b47;
+@accordion-label-selected-border-color: #2980b9;
+@accordion-selected-label-background: #212f3d;
+
+//LOADER 
+@loader-spinner-color: #556a7f;
+@loader-spinner-border-size: 2px;
+@loader-spinner-size: 61px;
+
 //Colors variables
 @white-color: #fff;
 @base-text-color: #fff;
@@ -75,6 +98,12 @@
 @mid-radius: 5px; //Средний радиус
 @min-radius: 3px; //Маленький радиус
 
+//SWITCHER 
+@checkbox-size: 1.250em;
+@switcher-background: #2b3845;
+@switcher-trigger-color: #556a7f;
+@switcher-checked-background: #2980b9;
+@switcher-checked-trigger-color: #44b2fb;
 
 //IMAGES 
 @image-border-size: 1px; //Размер бордера у картинки
@@ -367,11 +396,16 @@
     margin: 0;
   }
   
+  .icon-input-button:active,
+  .icon-input-button:focus,
+   .icon-input-button:hover {
+     color: #1b242d
+   }
+   
   .icon-input-button + .icon-input-button {
     position: absolute;
     height: @input-height;
     background: none!important;
-    color: #627C94;
     right: 30px;
     padding: 0;
   }
@@ -387,61 +421,7 @@
 
 
 
-/* CHECKBOXES */
-.switcher-item {
-  position: relative;
-  margin: 0 0 10px 0;
-  
-  .switcher {
-    position: absolute;
-  
-    .checkbox { 
-      display: none; 
-    }
-    
-    .trigger {
-      cursor: pointer;
-      position: relative;
-      float: left;
-      width: 30px;
-      height: @checkbox-size;
-      background: #2b3845;
-      overflow: hidden;
-      .transition;
-      .rounded(@big-radius);
-    }
-    
-    .checkbox:checked + .trigger { 
-      background: #2980b9; 
-    }
-    
-    .trigger:before {
-      content: '';
-      position: absolute;
-      top: 0; 
-      left: 0; 
-      bottom: 0;
-      width: 12px; 
-      height: 12px;
-      margin: auto 4px;
-      background-color: #556a7f;
-      .transition;
-      .rounded(@big-radius);
-    }
-    
-    .checkbox:checked + .trigger:before { 
-      left: 10px;
-      background-color: #44b2fb;
-    }
-    
 
-  }
-      .value {
-      color: @base-text-color;
-      margin: 0 0 0 40px;
-      font-size: 1em;
-    }
-}
 //Code block
 pre {
   background-color: #0c141d;
@@ -465,65 +445,7 @@ code {
 }
 
 
-//loaders
-.loader {
-  position: relative;
-}
 
-.spinner { 
-  cursor: wait;
-  border-radius: 61px;
-  animation: loading 4s infinite linear;
-  -moz-animation: loading 4s infinite linear;
-  -webkit-animation: loading 4s infinite linear;
-}
-
-.spin-1{
-  border: 2px dashed #556a7f;
-  width: 61px;
-  height: 61px; 
-  position: relative;
-  z-index: 5000;
-}
-
-.spinner-icon {
-  position: absolute;
-  top: 21px;
-  left: 19px;
-  color: #556a7f;
-  font-size: 1.438em;
-  z-index: 5100;
-}
-
- @keyframes loading {
-    0% {
-        -moz-transform: rotate(0deg);
-    }
-
-    100% {
-        -moz-transform: rotate(360deg);
-    };
-}
-
- @-moz-keyframes loading {
-    0% {
-        -moz-transform: rotate(0deg);
-    }
-
-    100% {
-        -moz-transform: rotate(360deg);
-    };
-}
-
-@-webkit-keyframes loading {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    };
-}
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IE8 FIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .lt-ie9 {
  //Checkbox form
@@ -622,175 +544,13 @@ code {
 
 
 
-//accordion
-.ac-container {
-  text-align: left;
-
-  label {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    z-index: 20;
-    padding: 10px;
-    margin-bottom: 10px;
-    display: block;
-    cursor: pointer;
-    background-color: #212f3d;
-    border-left: 4px solid #212f3d;
-    color: @base-text-color;
-    .transition;
-  
-    h4 {
-      margin: 0;
-      margin-left: 40px;
-    }
-  
-    i {
-      font-size: 1.1666666666666667em;
-      position: absolute;
-      top: 15px;
-      left: 20px;
-    }
-  
-    .arrow-icon-right {
-      display: block;
-    }
-  
-    .arrow-icon-down {
-      display: none;
-    }
-  }
- 
-  label:hover{
-    background: #2e3b47;
-    border-left: 4px solid #2e3b47;
-  }
-
-  input:checked + label,
-  input:checked + label:hover{
-    background: #212f3d;
-    cursor: default;
-    border-left: 4px solid #2980b9;
-  }
-
-  input:checked + label {
-    .arrow-icon-right {
-      display: none;
-    }
-    
-    .arrow-icon-down {
-      display: block;
-    }   
-  }
- 
-  input{
-    display: none;
-  }
-
-  input:checked + label + article {
-    margin-bottom: 10px;
-  }
-  
-  article {
-    background-color: #0c141d;
-    margin-top: -1px;
-    overflow: hidden;
-    height: 0px;
-    position: relative;
-    z-index: 10;
-    .transition;
-  
-    p {
-      margin-left: 20px;
-    }
-  }
-
-  input:checked ~ article{
-   .transition; 
-  }
-  
-  input:checked ~ article.ac-small{
-   min-height: 250px;
-  }
-}
 
 
-@tabs-navigation-height: 50px;
 
 
-//tabs
-.tabs {
-  position: relative;
-  
-   .tabs-navigation {
-     overflow: hidden;
-     position: absolute;
-     width: 100%;
-     top: 0;
-     background-color: #212f3d;
-     height: @tabs-navigation-height;
-    }
-    
-   label {
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    float: left;
-    position: relative;
-    text-align: center;
-    padding: 10px 20px 14px 20px;
-    border-top: 4px solid #212f3d;
-    background-color: #212f3d;
-    .transition;
-   }
 
-  label:hover {
-    border-top: 4px solid #2e3b47;
-    background-color: #2e3b47;
-  }
-    
-  input {
-    position: absolute;
-    left: -9999px;
-  }
- 
-  #tab_1:checked  ~ #tab_l1,
-  #tab_2:checked  ~ #tab_l2,
-  #tab_3:checked  ~ #tab_l3 {
-    background-color: #0c141d;
-    border-top: 4px solid #2980b9;
-    top: 0;
-    z-index: 3;
-    cursor: default;
-  } 
 
-  .tabs-content {
-    background-color: #0c141d;
-    position: relative;
-    z-index: 2;
-    height: auto;
-    overflow: hidden;
-    
-    p {
-      margin-left: 20px;
-    }
-  }
-  
-  .tabs-content > div {
-    position: absolute;
-    left: -9999px;
-    top: 0;
-    opacity: 0;
-    .transition;
-  }
-  
-  #tab_1:checked ~ .tabs-content #tab_c1,
-  #tab_2:checked ~ .tabs-content #tab_c2,
-  #tab_3:checked ~ .tabs-content #tab_c3 {
-    position: static;
-    left: 0;
-    opacity: 1;
-  }
-}
+
  
 
 
