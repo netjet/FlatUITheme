@@ -1,0 +1,41 @@
+.simple-panel {
+  background-color: @simple-panel-background;
+  
+  header {
+    height: 60px;
+    position: relative;
+    display: table;
+    width: 100%;
+    
+    .header-title {
+      display: table-cell;
+      height: 60px;
+      padding: 0 20px;
+      overflow: hidden;
+      
+      h1, h2, h3, h4, p, span {
+        margin: 0;
+        height: 60px;
+        line-height: 60px;
+      }
+    }  
+    
+    .header-toolbar {
+      display: table-cell;
+      height: 60px;
+      vertical-align: middle;
+      text-align: right;
+      padding: 0 20px;
+      width: auto;
+    }
+  }
+  
+  .simple-panel-content {
+    padding: 0 20px;
+  }
+  
+  footer {
+    padding: 20px;
+    background-color: #18212A;
+  }
+}
