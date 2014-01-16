@@ -15,7 +15,10 @@
 @import "elements/navigation.less";
 @import "elements/progress-bar.less";
 @import 'elements/loader.less';
+@import 'elements/switcher.less';
+@import 'elements/radio.less';
 @import 'elements/checkbox.less';
+@import 'elements/simple-list.less';
 
 //Widgets - сформированны из простых элементов
 @import "widgets/tree.less";
@@ -23,71 +26,23 @@
 @import "widgets/numeric-field.less";
 @import "widgets/tabs.less";
 @import "widgets/accordion.less";
+@import "widgets/dropdown-list.less";
+@import 'widgets/icon-field.less';
+@import 'widgets/code-block.less';
 
 //Variables
 @first-bg-color: #1b242d;
 @second-bg-color: #0f1a24; 
-@radio-button-size: 1.188em;
 @base-line: 1.375em;
 
 //paragraph vars
 @p-max-width: 33em; //Макаимальная ширина абзаца
 @p-text-ident: 1em; //Ширина отступа в абзаце
 
-
-//form vars
-@input-height: 2.250em; //Высота инпута
-@input-width: 200px; //Ширина инпута
-@input-padding: 0 10px; //Внутренние отступы в инпуте
-@input-margin: 0 0 10px; // Внешние отступы в инпуте
-@input-background: #ecf0f1; //Фон инпута
-@input-focus-background: #fff; //Фон инпута
-@input-text-color: #1b242d; // Цвет текста в инпуте
-@textarea-padding: 10px; //Внутренний отступ в текстарее
-@placeholder-color: #bdc3c7; //Цвет текста плейсхолдера
-
 //FONTS 
 @title-font-weight: 'SegoeUI semilight';
 @bold-font-weigh: 'SegoeUI semibold';
 @normal-font-weigh: 'SegoeUI normal';
-
-//LINKS
-@base-links-color: #fff; //Цвет ссылки
-@base-links-color-hover: #3498db; //Цвет ссылки при наведении
-@base-links-color-current: #9db7d1; //Цвет активной ссылки
-
-//NAVIGATION
-@horizontal-navigation-margin: 0 20px 0 0; //Отступ в горизонтальном меню
-@navigation-font-size: 1.063em; //Размер шрифта в меню
-@navigation-current-background: rgba(0, 0, 0, 0.25); //Фон активного пункта меню
-@navigation-current-border-color: #2980b9; //Цвет бордера активного пункта меню
-@navigation-current-border-size: 3px; //Размер бордера активного пункта меню
-@navigation-links-padding: 9px 20px; //Внутренний отступ в пункте меню
-@navigation-icon-margin: 10px; //Отступ иконки в меню
-
-//PROGRESS BARR
-@progress-bar-holder-background: #2b3845;
-@progress-bar-loader-background: #44b2fb;
-
-//TABS 
-@tabs-navigation-background: #212f3d;
-@tabs-navagation-hover-background: #2e3b47;
-@tabs-navigation-border-size: 4px;
-@tabs-navigation-selected-border-color: #2980b9;
-@tabs-content-background: #0c141d;
-@tabs-navigation-height: 50px;
-
-//ACCORDION
-@accodrion-label-background: #212f3d;
-@accordion-border-size: 4px;
-@accordion-label-hover-background: #2e3b47;
-@accordion-label-selected-border-color: #2980b9;
-@accordion-selected-label-background: #212f3d;
-
-//LOADER 
-@loader-spinner-color: #556a7f;
-@loader-spinner-border-size: 2px;
-@loader-spinner-size: 61px;
 
 //Colors variables
 @white-color: #fff;
@@ -98,27 +53,9 @@
 @mid-radius: 5px; //Средний радиус
 @min-radius: 3px; //Маленький радиус
 
-//SWITCHER 
-@checkbox-size: 1.250em;
-@switcher-background: #2b3845;
-@switcher-trigger-color: #556a7f;
-@switcher-checked-background: #2980b9;
-@switcher-checked-trigger-color: #44b2fb;
-
-//IMAGES 
-@image-border-size: 1px; //Размер бордера у картинки
-@image-border-color: #556a7f; //Цвет бордера у картинки
-@image-inner-padding: 10px; //Внутренний отступ картинки
-@image-border-radius: 10%; //Радиус изображения
-
 //OUTLINE 
 @outline-color: #3498db; //Цвет обводки
 @outline-size: 2px; //Размер обводки
-
-//BUTTONS
-@button-padding: 0 15px; //Внутренние отступы кнопки
-@button-text-color: #fff; // Цвет текста кнопки
-@button-background: #2b3845; //Цвет стандартной кнопки
 
 //small button vars
 @small-button-size: 2.000em; //Размер маленькой кнопки
@@ -141,7 +78,6 @@
 //Red button color
 @red-button-color: #e84d4d; //Оттенок крассной кнопки
 
-
 //Blue
 @d-blue-color: #1b242d;
 @blue-color: #2980b9;
@@ -151,8 +87,114 @@
 //Gray
 @l-gray-color: #ecf0f1;
 
+//////////////////////////////     ELEMENTS     //////////////////////////////////
 
-//WIDGETS
+//BUTTONS
+@button-padding: 0 15px; //Внутренние отступы кнопки
+@button-text-color: #fff; // Цвет текста кнопки
+@button-background: #2b3845; //Цвет стандартной кнопки
+
+//CHECKBOX
+@checkbox-item-background: #ecf0f1;
+@checkbox-item-background-hover: #fff;
+@checkbox-item-checker-color: #2980b9;
+@checkbox-item-text-color: #fff;
+
+//IMAGES 
+@image-border-size: 1px; //Размер бордера у картинки
+@image-border-color: #556a7f; //Цвет бордера у картинки
+@image-inner-padding: 10px; //Внутренний отступ картинки
+@image-border-radius: 10%; //Радиус изображения
+
+//INPUTS
+@input-height: 2.250em; //Высота инпута
+@input-width: 200px; //Ширина инпута
+@input-padding: 0 10px; //Внутренние отступы в инпуте
+@input-margin: 0 0 10px; // Внешние отступы в инпуте
+@input-background: #ecf0f1; //Фон инпута
+@input-focus-background: #fff; //Фон инпута
+@input-text-color: #1b242d; // Цвет текста в инпуте
+@textarea-padding: 10px; //Внутренний отступ в текстарее
+@placeholder-color: #bdc3c7; //Цвет текста плейсхолдера
+
+//LINKS
+@base-links-color: #fff; //Цвет ссылки
+@base-links-color-hover: #3498db; //Цвет ссылки при наведении
+@base-links-color-current: #9db7d1; //Цвет активной ссылки
+
+//LOADER 
+@loader-spinner-color: #556a7f;
+@loader-spinner-border-size: 2px;
+@loader-spinner-size: 61px;
+
+//NAVIGATION
+@horizontal-navigation-margin: 0 20px 0 0; //Отступ в горизонтальном меню
+@navigation-font-size: 1.063em; //Размер шрифта в меню
+@navigation-current-background: rgba(0, 0, 0, 0.25); //Фон активного пункта меню
+@navigation-current-border-color: #2980b9; //Цвет бордера активного пункта меню
+@navigation-current-border-size: 3px; //Размер бордера активного пункта меню
+@navigation-links-padding: 9px 20px; //Внутренний отступ в пункте меню
+@navigation-icon-margin: 10px; //Отступ иконки в меню
+
+//PROGRESS BARR
+@progress-bar-holder-background: #2b3845;
+@progress-bar-loader-background: #44b2fb;
+
+//RADIO BUTTON
+@radio-button-background: #ecf0f1;
+@radio-button-background-hover: #fff;
+@radio-button-checker-color: #2980b9;
+@radio-button-size: 1.188em;
+@radio-button-text-color: #fff;
+
+//SWITCHER 
+@checkbox-size: 1.250em;
+@switcher-background: #2b3845;
+@switcher-trigger-color: #556a7f;
+@switcher-checked-background: #2980b9;
+@switcher-checked-trigger-color: #44b2fb;
+
+//SELECT BUTTON
+@select-button-background: #ecf0f1;
+@select-button-background-hover: #fff;
+@select-button-text-color: #1b242d;
+@select-button-font: 'SegoeUI semibold';
+@select-button-height: 2.500em;
+
+
+
+
+//////////////////////////////     WIDGETS     //////////////////////////////////
+
+//ACCORDION
+@accodrion-label-background: #212f3d;
+@accordion-border-size: 4px;
+@accordion-label-hover-background: #2e3b47;
+@accordion-label-selected-border-color: #2980b9;
+@accordion-selected-label-background: #212f3d;
+
+//CODE BLOCK
+@code-block-background: #0c141d;
+@code-block-text-color: #738b9a;
+
+//DROPDOWN LIST
+@dropdown-list-bakground: #fff;
+@dropdown-list-width: 300px;
+@dropdown-list-font-size: 0.938em;
+@dropdown-list-border-color: #ecf0f1;
+@dropdown-list-border-size: 1px;
+@dropdown-list-text-color: #1b242d;
+@dropdown-list-selected-item-color: #3498db;
+@dropdown-list-selected-text-color: #fff;
+
+//TABS 
+@tabs-navigation-background: #212f3d;
+@tabs-navagation-hover-background: #2e3b47;
+@tabs-navigation-border-size: 4px;
+@tabs-navigation-selected-border-color: #2980b9;
+@tabs-content-background: #0c141d;
+@tabs-navigation-height: 50px;
+
 //TREE
 @tree-icon-size: 1.188em; //Размер иконки в ветке дерева
 @tree-icon-closed-color: #2980b9; //Цвет иконки открытой ветки
@@ -163,286 +205,9 @@
 
 
 
-
-//selectors
-.select-form {
-  position: relative;
-
-  .selector {
-    display: table;
-    height: 2.500em;
-    background: @l-gray-color;
-    color: @d-blue-color;
-    padding: 0 10px;
-    border: 0;
-    font-family: 'SegoeUI semibold';
-    .rounded;
-    
-    .down-icon {
-      display: table-cell;
-      height: 2.500em;
-      vertical-align: middle;
-    }
-    
-     .up-icon {
-       display: none;
-     }
-  }      
-   .selector + .select-options { 
-     display: none;
-    }
-  
-  //selector hover
-  .selector:hover {
-     background: @white-color;
-     cursor: pointer;
-   }
-  
-  //selector focus
-  .selector:focus {
-     background: @white-color;
-     .outline;
-     
-     .up-icon {
-      display: table-cell;
-      height: 2.500em;
-      vertical-align: middle;
-     }
-     
-     .down-icon {
-       display: none;
-     }
-  }
-
-  //show dropdown list
-  .selector:focus + .select-options {
-       position: absolute;
-       display: table;
-       left: 0;
-       top: 0;
-       margin-top: 10px;
-       z-index: 100;
-     }
-     .selector:focus + .select-options .selector-options {
-       background: @white-color;
-        .rounded;
-     }
-  i {
-    padding: 0 0 0 10px;
-  }
-  
-  .selected-value {
-    display: table-cell;
-    height: 2.500em;
-    vertical-align: middle;
-  }
-}
+.form-item {position: relative;display: table;} 
 
 
-//Select-list 
-.selectable-list {
-  .rounded;
-  font-size: 0.938em;
-  width: 300px;
-  
-  ul {
-    overflow: hidden;
-    
-    li {
-      border-bottom: 1px solid @l-gray-color;
-      padding: 10px;
-      color: #1b242d;
-    }
-    
-    li.selected,
-    li:hover {
-      background: @l-blue-color;
-      color: @white-color;
-      cursor: pointer;
-      border-bottom: 1px solid transparent;
-    }
-    
-    li:first-child {
-      .border-radius(@min-radius, 0, 0, @min-radius);
-    }
-    
-    li:last-child {
-      border-bottom: 0;
-      .border-radius(0, @min-radius, @min-radius, 0);
-    }
-  }
-}
-
-
-//Checkbox form
-.checkbox-item {
-  display: table;
-  margin: 0 0 10px 0;
-  position: relative;
- 
-  input[type="checkbox"] {
-    display:none;
-  }
-  
-  input[type="checkbox"] + label {
-    color: @white-color;
-    cursor: pointer;
-  }
-  
-  input[type="checkbox"]:focus {
-    .outline;  
-  }
-  
-  input[type="checkbox"] + label:hover .checker {
-    background: @white-color;
-  }
-  
-  input[type="checkbox"] + label .checker {
-   position: absolute;
-   vertical-align: middle;
-   cursor: pointer;
-   background: @l-gray-color;
-   .rounded;
-   width: @checkbox-size;
-   height: @checkbox-size;
-   text-align: center;
-   margin: 0 10px 0 0;
-    
-   i {display: none;}
-  }
-  
-  .value {
-    margin: 0 0 0 @checkbox-size + 0.625em;
-    font-size: 1em;
-  }
-  
-  input[type="checkbox"]:checked + label .checker {
-    background: @white-color;
-    
-    i {
-      display: table;
-      font-size: 1.125em;
-      color: @blue-color;
-      padding: 0.063em;
-      width: 100%;
-    }
-  }
-}
-
-//Radio item 
-.radio-item {
-  display: table;
-  margin: 0 0 10px 0;
-  position: relative;
-  
-  input[type="radio"] {
-      display:none;
-  }
-
-  input[type="radio"] + label {
-    color: @white-color;
-    cursor: pointer;
-  }
-  
-  input[type="radio"] + label:hover .radio-checker {
-    background: @white-color;  
-  }
-  
-  input[type="radio"] + label .radio-checker {
-    position: absolute;
-    vertical-align: middle;
-    text-align: center;
-    cursor: pointer;
-    background: @l-gray-color;
-    cursor: pointer;
-    width: @radio-button-size;
-    height: @radio-button-size;
-    line-height: @radio-button-size;
-    .rounded(50%);
-    
-    i {display: none;}
-  }
-  
-  .value {
-    margin: 0 0 0 @checkbox-size + 0.625em
-  }
-  
-  
-  input[type="radio"]:checked + label .radio-checker {
-   i {
-      display: table;
-      font-size: 0.813em;
-      color: @blue-color;
-      margin: 50% 0;
-      width: 100%;
-      top: -0.5065em;
-      position: relative;
-    }
-  }
-}
-
-.form-holder {
-  position: relative;
-  display: table; 
-  
-  //INPUT WITH ICON BUTTON
-  .icon-input-button {
-    position: absolute;
-    right: 0;
-    padding: 0 10px;
-    height: @input-height;
-    background: none!important;
-    color: #627C94;
-    margin: 0;
-  }
-  
-  .icon-input-button:active,
-  .icon-input-button:focus,
-   .icon-input-button:hover {
-     color: #1b242d
-   }
-   
-  .icon-input-button + .icon-input-button {
-    position: absolute;
-    height: @input-height;
-    background: none!important;
-    right: 30px;
-    padding: 0;
-  }
-  
-  .icon-input-button + input {
-    padding-right: 30px;
-  }
-  
-  .icon-input-button + .icon-input-button + input {
-    padding-right: 60px;
-  }
-} 
-
-
-
-
-//Code block
-pre {
-  background-color: #0c141d;
-}
-
-code {
-  background-color: #0c141d;
-  color: #738b9a;
-  padding: 0;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
 
 
 
@@ -510,8 +275,6 @@ code {
     }
   }
 } 
-  
-  
 }
 
 

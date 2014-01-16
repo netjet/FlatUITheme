@@ -86,3 +86,63 @@ button:active {
 .btn-icon i + span {
   margin: 0 0 0 10px;
 }
+
+
+//select-button 
+.selector-button {
+  position: relative;
+  display: table;
+  height: @select-button-height;
+  background-color: @select-button-background;
+  color: @select-button-text-color;
+  padding: 0 10px;
+  border: 0;
+  font-family: @select-button-font;
+  .rounded;
+  
+  .down-icon {
+    display: table-cell;
+    height: 2.500em;
+    vertical-align: middle;
+  }
+  
+   .up-icon {
+     display: none;
+   }
+   
+ i {
+   padding: 0 0 0 10px;
+  }
+}      
+
+.selector-button + .simple-list { 
+  display: none;
+ }
+
+//selector hover
+.selector-button:hover {
+  background-color: @select-button-background-hover;
+  cursor: pointer;
+}
+
+//selector focus
+.selector-button:focus {
+  background: @select-button-background-hover;
+  .outline;
+   
+  .up-icon {
+   display: table-cell;
+   height: 2.500em;
+   vertical-align: middle;
+  }
+   
+  .down-icon {
+    display: none;
+  }
+}
+
+.selected-value {
+    display: table-cell;
+    height: 2.500em;
+    vertical-align: middle;
+  }

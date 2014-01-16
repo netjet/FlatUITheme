@@ -1,54 +1,54 @@
-/* SWITCHERS */
-.switcher-item {
-  position: relative;
+//Checkbox form
+.checkbox-item {
+  display: table;
   margin: 0 0 10px 0;
+  position: relative;
+ 
+  input[type="checkbox"] {
+    display:none;
+  }
   
-  .switcher {
-    position: absolute;
+  input[type="checkbox"] + label {
+    color: @checkbox-item-text-color;
+    cursor: pointer;
+  }
   
-    .checkbox { 
-      display: none; 
-    }
+  input[type="checkbox"]:focus {
+    .outline;  
+  }
+  
+  input[type="checkbox"] + label:hover .checker {
+    background: @radio-button-background-hover;
+  }
+  
+  input[type="checkbox"] + label .checker {
+   position: absolute;
+   vertical-align: middle;
+   cursor: pointer;
+   background: @checkbox-item-background;
+   .rounded;
+   width: @checkbox-size;
+   height: @checkbox-size;
+   text-align: center;
+   margin: 0 10px 0 0;
     
-    .trigger {
-      cursor: pointer;
-      position: relative;
-      float: left;
-      width: 30px;
-      height: @checkbox-size;
-      background: @switcher-background;
-      overflow: hidden;
-      .transition;
-      .rounded(@big-radius);
-    }
-    
-    .checkbox:checked + .trigger { 
-      background: @switcher-checked-background; 
-    }
-    
-    .trigger:before {
-      content: '';
-      position: absolute;
-      top: 0; 
-      left: 0; 
-      bottom: 0;
-      width: 12px; 
-      height: 12px;
-      margin: auto 4px;
-      background-color: @switcher-trigger-color;
-      .transition;
-      .rounded(@big-radius);
-    }
-    
-    .checkbox:checked + .trigger:before { 
-      left: 10px;
-      background-color: @switcher-checked-trigger-color;
-    }
+   i {display: none;}
   }
   
   .value {
-    color: @base-text-color;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 @checkbox-size + 0.625em;
     font-size: 1em;
+  }
+  
+  input[type="checkbox"]:checked + label .checker {
+    background: @checkbox-item-background-hover;
+    
+    i {
+      display: table;
+      font-size: 1.125em;
+      color: @checkbox-item-checker-color;
+      padding: 0.063em;
+      width: 100%;
+    }
   }
 }

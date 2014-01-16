@@ -58,45 +58,46 @@
 					<h4>Формы</h4>
 				</div>
 				<div class="col9 last">
-					<div class="form-holder">
+					<div class="form-item">
 						<input type="text" placeholder="Логин" class="middle" />
 						<br/>
 					</div>              
 					
-					<div class="form-holder">
+					<div class="form-item">
 						<input type="password" placeholder="Пароль" class="middle"/>
 						<br/>
 					</div>
-					<div class="form-holder">
+					<div class="form-item">
 						<button class="icon-input-button"><i class="fa fa-search"></i></button>
 						<input type="text" placeholder="Поиск" class="middle" />
 						<br/>
 					</div>
-					<div class="form-holder">
+					<div class="form-item">
 						<button class="icon-input-button"><i class="fa fa-search"></i></button>
 						<button class="icon-input-button"><i class="fa fa-star"></i></button>
 						<input type="text" placeholder="Значение" class="middle" />
 						<br/>
 					</div>
-					<div class="form-holder numeric-field">
+					<div class="form-item numeric-field">
 						<button class="icon-input-button"><i class="fa fa-caret-up"></i></button>
 						<button class="icon-input-button"><i class="fa fa-caret-down"></i></button>
 						<input type="text" placeholder="0" class="middle" />
 						<br/>
 					</div>
-					<div class="form-holder">
+					<div class="form-item">
 						<textarea placeholder="Любой текст"> </textarea>
 						<br/>
 					</div>
 
-					<span class="select-form">
-						<button class="selector">
+					<div class="dropdown-panel">
+						<button class="selector-button">
 							<span class="selected-value">Значение</span>
 							<i class="down-icon fa fa-chevron-down"></i>
 							<i class="up-icon fa fa-chevron-up"></i>
 						</button>
-						<div class="select-options selectable-list">
-							<div class="selector-options">
+						
+						<div class="simple-list">
+							<div class="simple-dropdown-list">
 								<ul>
 									<li>
 										Опция 1
@@ -109,7 +110,9 @@
 									</li>
 								</ul>
 							</div>
-						</div> </span>
+						</div> 
+						
+					</div>
 					<br/>
 					<br/>
 					<div class="checkbox-item">
@@ -828,7 +831,7 @@
 					<h4>Код</h4>
 				</div>
 				<div class="col9 last">
-					<pre>
+					<pre class="code-block">
 						<code>
 	input[type="radio"]+label .radio-checker {
 		position:absolute;
