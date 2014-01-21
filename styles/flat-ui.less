@@ -21,6 +21,7 @@
 @import 'elements/radio.less';
 @import 'elements/checkbox.less';
 @import 'elements/simple-list.less';
+@import 'elements/breadcrumbs.less';
 
 //Widgets - сформированны из простых элементов
 @import "widgets/tree.less";
@@ -95,6 +96,12 @@
 @button-padding: 0 15px; //Внутренние отступы кнопки
 @button-text-color: #fff; // Цвет текста кнопки
 @button-background: #2b3845; //Цвет стандартной кнопки
+
+//BREADCRUMBS 
+@breadcrumbs-background-color: #18212A;
+@breadcrumbs-padding: 9px 20px;
+@breadcrumbs-margin: 0 0 20px 0;
+@breadcrumbs-text-color: #9db7d1;
 
 //CHECKBOX
 @checkbox-item-background: #ecf0f1;
@@ -310,16 +317,59 @@
 }
 
 
-//Breadcrumbs
-.breadcrumbs {
-  background-color: #18212A;
-  padding: 0 20px;
-  
-  ul {
-    margin: 0;
+
+
+.table {
+  table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0;
     
-    li:after {
-    position: relative;
+    th, td {
+      position: relative;
+      
+      span {
+        display: block;
+        padding: 5px 20px;        
+      }
+    }
+    
+    thead {
+      background-color: #18212a;
+    }
+    
+    tbody {
+      tr td{
+        border-bottom: 2px solid #18212a; 
+      }
+    }
+  }
+}
+
+.selectable-table {
+  tbody {
+    tr {
+      .transition;
+      td {
+        .transition;
+      }
+    }
+    
+    tr:hover {
+      td {
+        border-bottom: 2px solid #212f3d;
+      }
+
+       background-color: #212f3d;
+    }
+  }
+}
+
+.editable-table {
+  
+  .locked:after {
+     position: absolute;
     display: inline-block;
     font-family: FontAwesome;
     font-style: normal;
@@ -327,33 +377,48 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "\f105";
+    content: "\f023";
     font-size: @navigation-font-size;
-    top: 1px;
     margin-left: 10px;
-    color: #9db7d1;
-    }
+    top: 10px;
+    right: 15px;
+    color: @breadcrumbs-text-color;
+  }
+  
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: transparent;
+    color: #fff;
+    .rounded(0);
+    padding: 10px 20px;
+    font-weight: normal;
+    z-index: 50;
+  }
+  
+  input:focus,
+  input:hover {
+    background-color: #212f3d;
+  }
+  
+  input:focus {
+    z-index: 60;
+  }
+  
+  input[disabled="disabled"] {
     
-    li {
-      float: left;
-      font-size: @navigation-font-size;
-      .rounded(@mid-radius);
-      .transition;
-      padding: 9px 10px 9px 0;
-     }
-     
-     .current {
-       color: #9db7d1;
-     }
-     
-     .current:after {
-       display: none;
-     }
-   }
+  }
+  
+  input[disabled="disabled"]:hover {
+    background: transparent;
+  }
 }
-
-
-
 
 
 
