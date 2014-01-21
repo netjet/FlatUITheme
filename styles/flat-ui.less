@@ -310,8 +310,47 @@
 }
 
 
-
-
+//Breadcrumbs
+.breadcrumbs {
+  background-color: #18212A;
+  padding: 0 20px;
+  
+  ul {
+    margin: 0;
+    
+    li:after {
+    position: relative;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f105";
+    font-size: @navigation-font-size;
+    top: 1px;
+    margin-left: 10px;
+    color: #9db7d1;
+    }
+    
+    li {
+      float: left;
+      font-size: @navigation-font-size;
+      .rounded(@mid-radius);
+      .transition;
+      padding: 9px 10px 9px 0;
+     }
+     
+     .current {
+       color: #9db7d1;
+     }
+     
+     .current:after {
+       display: none;
+     }
+   }
+}
 
 
 
