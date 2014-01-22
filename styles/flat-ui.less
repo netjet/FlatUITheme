@@ -6,6 +6,7 @@
 
 //Layout elements - элементы разметки
 @import 'layout/simple-panel';
+@import 'layout/application-layouts';
 
 //Base elements - простые элементы
 @import "elements/titles.less";
@@ -76,7 +77,7 @@
 @blue-button-color: #2980b9; //Оттенок синей кнопки
 
 //Green button color
-@green-button-color: #078c52; //Оттенок зеленой кнопки
+@green-button-color: #549E4D; //Оттенок зеленой кнопки
 
 //Red button color
 @red-button-color: #e84d4d; //Оттенок крассной кнопки
@@ -216,9 +217,12 @@
 ///////////////////////////////// LAYOUTS //////////////////////////////////
 @simple-panel-background: #222A33;
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .form-item {position: relative;display: table;} 
-
-
 
 
 
@@ -329,7 +333,7 @@
     th, td {
       position: relative;
       
-      span {
+    >  span {
         display: block;
         padding: 5px 20px;        
       }
