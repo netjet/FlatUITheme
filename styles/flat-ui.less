@@ -23,6 +23,7 @@
 @import 'elements/checkbox.less';
 @import 'elements/simple-list.less';
 @import 'elements/breadcrumbs.less';
+@import 'elements/blockquote.less';
 
 //Widgets - сформированны из простых элементов
 @import "widgets/tree.less";
@@ -33,6 +34,7 @@
 @import "widgets/dropdown-list.less";
 @import 'widgets/icon-field.less';
 @import 'widgets/code-block.less';
+@import 'widgets/form-item.less';
 
 //Variables
 @first-bg-color: #1b242d;
@@ -97,6 +99,13 @@
 @button-padding: 0 15px; //Внутренние отступы кнопки
 @button-text-color: #fff; // Цвет текста кнопки
 @button-background: #2b3845; //Цвет стандартной кнопки
+
+//BLOCKQUOTES 
+@blockquote-text-color: #9db7d1;
+@blockquote-font-size: 0.8333333333333334em;
+@blockquite-width: 33em;
+@blockquite-margin: 0 0 30px 0;
+@blockquite-padding: 0 0 0 25px;
 
 //BREADCRUMBS 
 @breadcrumbs-background-color: #18212A;
@@ -222,7 +231,6 @@ body {
   padding: 0;
 }
 
-.form-item {position: relative;display: table;} 
 
 
 
@@ -423,13 +431,6 @@ body {
     background: transparent;
   }
 }
-
-
-
- 
-
-
-
 
 
 
