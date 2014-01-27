@@ -18,12 +18,16 @@
     float: left;
     clear: left;
     position: relative;
-    text-align: center;
+    text-align: left;
     padding: 10px 20px 14px 20px;
     width: @vertical-tabs-width;
     border-left: @tabs-navigation-border-size solid @tabs-navigation-background;
     background-color: @tabs-navigation-background;
     .transition;
+    
+    span {
+      float: left;
+    }
    }
 
   > label:hover {

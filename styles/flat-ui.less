@@ -24,6 +24,7 @@
 @import 'elements/simple-list.less';
 @import 'elements/breadcrumbs.less';
 @import 'elements/blockquote.less';
+@import "elements/notifer.less";
 
 //Widgets - сформированны из простых элементов
 @import "widgets/tree.less";
@@ -31,11 +32,13 @@
 @import "widgets/numeric-field.less";
 @import "widgets/tabs-horizontal.less";
 @import "widgets/tabs-vertical.less";
+@import "widgets/tags.less";
 @import "widgets/accordion.less";
 @import "widgets/dropdown-list.less";
 @import 'widgets/icon-field.less';
 @import 'widgets/code-block.less';
 @import 'widgets/form-item.less';
+@import 'widgets/split-buttons.less';
 
 //Variables
 @first-bg-color: #1b242d;
@@ -213,6 +216,11 @@
 @dropdown-list-selected-item-color: #3498db;
 @dropdown-list-selected-text-color: #fff;
 
+
+//SPLIT BUTTONS
+@split-buttons-margin: 0 1px 0 0;
+@splut-button-selected-darken: 4%;
+ 
 //TABS 
 @tabs-navigation-background: #212f3d;
 @tabs-navagation-hover-background: #2e3b47;
@@ -221,6 +229,13 @@
 @tabs-content-background: #0c141d;
 @tabs-navigation-height: 50px;
 @vertical-tabs-width: 200px;
+
+//TAGS 
+@tags-margin: 0 0 20px 0;
+@tags-icon-color: #9db7d1;
+@tags-icon-margin: 5px; 
+@tags-font-size: 0.8333333333333334em;
+
 
 //TREE
 @tree-icon-size: 1.188em; //Размер иконки в ветке дерева
@@ -442,31 +457,9 @@ body {
 
 
 
-//SPLIT BUTTONS
-.split-buttons {
-  position: relative;
-  padding: 0;
-  
-  & > button {
-    float: left;    margin: 0 1px 0 0;
-    left: 0;
-    .border-radius(0);
-  }
-  
-  button:first-child {
-    .border-radius( 0, 0, @min-radius , @min-radius);
-  }
-    
-  button:last-child {
-    border-bottom: 0;
-    .border-radius(@min-radius, @min-radius, 0, 0);
-    margin: 0;
-  }
-  
-  button.selected {
-    background: darken(@button-background, 4%);
-    cursor: default;
-  }
-}
+
+
+
+
 
 
