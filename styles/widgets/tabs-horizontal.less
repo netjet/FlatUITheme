@@ -1,5 +1,5 @@
 //tabs
-.tabs {
+.tabs-horizontal {
   position: relative;
   
    .tabs-navigation {
@@ -34,9 +34,15 @@
     left: -9999px;
   }
  
-  #tab_1:checked  ~ #tab_l1,
-  #tab_2:checked  ~ #tab_l2,
-  #tab_3:checked  ~ #tab_l3 {
+  #hor-tab_1:checked  ~ #hor-tab_l1,
+  #hor-tab_2:checked  ~ #hor-tab_l2,
+  #hor-tab_3:checked  ~ #hor-tab_l3,
+  #hor-tab_3:checked  ~ #hor-tab_l4,
+  #hor-tab_3:checked  ~ #hor-tab_l5,
+  #hor-tab_3:checked  ~ #hor-tab_l6,
+  #hor-tab_3:checked  ~ #hor-tab_l7,
+  #hor-tab_3:checked  ~ #hor-tab_l8,
+  #hor-tab_3:checked  ~ #hor-tab_l9 {
     background-color: @tabs-content-background;
     border-top: @tabs-navigation-border-size solid @tabs-navigation-selected-border-color;
     top: 0;
@@ -64,9 +70,15 @@
     .transition;
   }
   
-  #tab_1:checked ~ .tabs-content #tab_c1,
-  #tab_2:checked ~ .tabs-content #tab_c2,
-  #tab_3:checked ~ .tabs-content #tab_c3 {
+  #hor-tab_1:checked ~ .tabs-content #hor-tab_c1,
+  #hor-tab_2:checked ~ .tabs-content #hor-tab_c2,
+  #hor-tab_3:checked ~ .tabs-content #hor-tab_c3,
+  #hor-tab_4:checked ~ .tabs-content #hor-tab_c4,
+  #hor-tab_5:checked ~ .tabs-content #hor-tab_c5,
+  #hor-tab_6:checked ~ .tabs-content #hor-tab_c6,
+  #hor-tab_7:checked ~ .tabs-content #hor-tab_c7,
+  #hor-tab_8:checked ~ .tabs-content #hor-tab_c8,
+  #hor-tab_9:checked ~ .tabs-content #hor-tab_c9 {
     position: static;
     left: 0;
     opacity: 1;

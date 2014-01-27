@@ -29,7 +29,8 @@
 @import "widgets/tree.less";
 @import "widgets/media-list.less";
 @import "widgets/numeric-field.less";
-@import "widgets/tabs.less";
+@import "widgets/tabs-horizontal.less";
+@import "widgets/tabs-vertical.less";
 @import "widgets/accordion.less";
 @import "widgets/dropdown-list.less";
 @import 'widgets/icon-field.less';
@@ -146,6 +147,12 @@
 @loader-spinner-border-size: 2px;
 @loader-spinner-size: 61px;
 
+//FILE LOADER 
+@file-loader-icon-size: 3.063em;
+@file-loader-before-icon-color: #549e4d;
+@file-loader-after-icon-color: #556a7f;
+@file-loader-animation-time: 2.5s;
+
 //NAVIGATION
 @horizontal-navigation-margin: 0 20px 0 0; //Отступ в горизонтальном меню
 @navigation-font-size: 1.063em; //Размер шрифта в меню
@@ -213,6 +220,7 @@
 @tabs-navigation-selected-border-color: #2980b9;
 @tabs-content-background: #0c141d;
 @tabs-navigation-height: 50px;
+@vertical-tabs-width: 200px;
 
 //TREE
 @tree-icon-size: 1.188em; //Размер иконки в ветке дерева
@@ -434,7 +442,31 @@ body {
 
 
 
-
-
+//SPLIT BUTTONS
+.split-buttons {
+  position: relative;
+  padding: 0;
+  
+  & > button {
+    float: left;    margin: 0 1px 0 0;
+    left: 0;
+    .border-radius(0);
+  }
+  
+  button:first-child {
+    .border-radius( 0, 0, @min-radius , @min-radius);
+  }
+    
+  button:last-child {
+    border-bottom: 0;
+    .border-radius(@min-radius, @min-radius, 0, 0);
+    margin: 0;
+  }
+  
+  button.selected {
+    background: darken(@button-background, 4%);
+    cursor: default;
+  }
+}
 
 
