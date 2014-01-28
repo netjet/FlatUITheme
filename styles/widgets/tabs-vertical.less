@@ -3,15 +3,11 @@
   position: relative;
   
    .tabs-navigation {
-     //overflow: hidden;
-     //position: absolute;
-     //width: 200px;
      top: 0;
      background-color: @tabs-navigation-background;
-     //height: @tabs-navigation-height;
     }
     
-   > label {
+   &  > label {
     color: #fff;
     cursor: pointer;
     display: block;
@@ -30,7 +26,7 @@
     }
    }
 
-  > label:hover {
+  & > label:hover {
     border-left: @tabs-navigation-border-size solid @tabs-navagation-hover-background;
     background-color: @tabs-navagation-hover-background;
   }
