@@ -24,6 +24,7 @@
 @import 'elements/breadcrumbs.less';
 @import 'elements/blockquote.less';
 @import "elements/notifer.less";
+@import "elements/upload-button.less";
 
 //Widgets - сформированны из простых элементов
 @import "widgets/tree.less";
@@ -190,7 +191,8 @@
 @select-button-font: 'SegoeUI semibold';
 @select-button-height: 2.500em;
 
-
+//UPLOAD BUTTON 
+@upload-button-margin: 0 0 20px 0;
 
 
 //////////////////////////////     WIDGETS     //////////////////////////////////
@@ -462,39 +464,16 @@ body {
 }
 
 
-.file-uploader:hover {
-  button {
-     background: lighten(@blue-button-color, 7%);
-  }
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    body { font-size: 150%; }
 }
 
-.file-uploader:active {
-    button {
-  background: darken(@blue-button-color, 5%);
-  }
-}
-
-.file-uploader {
-  position: relative;
-  margin: 0 0 20px 0;
-  cursor: pointer;
-  display: table;
-  overflow: hidden;
-  
-  button {
-    margin: 0;
-  }
-  
-  input[type="file"] {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    height: 100%;
-    width: 200%;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
+@media
+only screen and (-webkit-min-device-pixel-ratio : 2),
+only screen and (min-device-pixel-ratio : 2) {
+    body { font-size: 200%; }
 }
 
 
