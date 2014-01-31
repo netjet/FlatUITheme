@@ -41,6 +41,7 @@
 @import 'widgets/code-block.less';
 @import 'widgets/form-item.less';
 @import 'widgets/split-buttons.less';
+@import "widgets/weather.less";
 
 //Variables
 @first-bg-color: #1b242d;
@@ -264,6 +265,12 @@
 @tree-item-icon-size: 0.875em; //Размер иконки в пункте меню
 @tree-item-icon-margin: 10px; //Размер иконки в пункте меню
 
+//WEATHER
+@weather-widget-sign-background: #44b2fb;
+@weather-info-background: #222a33;
+@weather-widget-height: 80px;
+@weather-widget-padding: 0 20px;
+@weather-widget-sign-size: 2.188em;
 
 ///////////////////////////////// LAYOUTS //////////////////////////////////
 @simple-panel-background: #222A33;
@@ -402,6 +409,7 @@ body {
     & > * {
       display: table-cell;
       vertical-align: middle;
+      margin: 0 10px;
     }
   }
   
@@ -416,9 +424,99 @@ body {
 }
 
 
+.date-element {
+  font-size: 0.8333333333333334em;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+  
+  .day {
+    background-color: #2980b9;
+    padding: 3px 5px;
+    margin-right: 5px;
+    .rounded(@min-radius)
+  }
+  
+  .month {
+    margin-right: 3px;
+  }
+}
+
+.time-element.blink {
+  .hour:after {
+    animation: blinking 1s infinite linear;
+    -moz-animation: blinking 1s infinite linear;
+    -webkit-animation: blinking 1s infinite linear;
+  }
+  
+  
+  @keyframes blinking {
+    0% {
+      opacity: 100%;
+    }
+
+    90% {
+      opacity: 0;
+    };
+    
+    100% {
+      opacity: 100%;
+    }
+}
+
+ @-moz-keyframes blinking {
+    0% {
+      opacity: 100%;
+    }
+
+    90% {
+      opacity: 0;
+    };
+    
+    100% {
+      opacity: 100%;
+    }
+}
+
+@-webkit-keyframes blinking  {
+    0% {
+      opacity: 100%;
+    }
+
+    90% {
+      opacity: 0;
+    };
+    
+    100% {
+      opacity: 100%;
+    }
+  }
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.time-element {
+  font-size: 0.8333333333333334em;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+  .hour:after {
+    content: ':';
+    margin-left: 3px;
+  }
+}
 
