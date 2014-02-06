@@ -1,0 +1,142 @@
+.circle-chart-widget {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  .rounded(100%);
+  
+  .circle-wrapper {
+    background-color: #2D3641;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .rounded(100%);
+    
+    .circle-part-1 {
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      left: 50%;
+      background-color: #2980b9;
+    }
+    
+    .circle-part-2 {
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      display:none;
+      background-color: #2980b9;
+    }
+    
+    .circle-part-3 {
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      display:none;
+      background-color: #2980b9;
+    }
+    
+    .circle-part-4 {
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display:none;
+      background-color: #2980b9;
+    }
+    
+    .circle-overlay {
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      left: 50%;
+      background-color: #2D3641;
+      .trans-origin(0 100%);
+      .transition;
+    }
+    
+    .circle-hole {
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      background-color: #1b242d;
+      .rounded(100%);
+    }
+  }
+}
+
+
+
+
+//Первый интервал от 0 до 90 градусов
+.per-0 {.circle-overlay {.rotation(@deg:0);}}
+.per-1 {.circle-overlay {.rotation(@deg:3.6deg);}}
+.per-2 {.circle-overlay {.rotation(@deg:7.2deg);}}
+.per-3 {.circle-overlay {.rotation(@deg:10.8deg);}}
+.per-4 {.circle-overlay {.rotation(@deg:14.4deg);}}
+.per-5 {.circle-overlay {.rotation(@deg:18deg);}}
+.per-6 {.circle-overlay {.rotation(@deg:21.6deg);}}
+.per-7 {.circle-overlay {.rotation(@deg:25.2deg);}}
+.per-8 {.circle-overlay {.rotation(@deg:28.8deg);}}
+.per-9 {.circle-overlay {.rotation(@deg:32.4deg);}}
+.per-10 {.circle-overlay {.rotation(@deg:39.6deg);}}
+.per-11 {.circle-overlay {.rotation(@deg:43.2deg);}}
+.per-12 {.circle-overlay {.rotation(@deg:46.8deg);}}
+.per-13 {.circle-overlay {.rotation(@deg:50.4deg);}}
+.per-14 {.circle-overlay {.rotation(@deg:54deg);}}
+.per-15 {.circle-overlay {.rotation(@deg:57.6deg);}}
+.per-16 {.circle-overlay {.rotation(@deg:61.2deg);}}
+.per-17 {.circle-overlay {.rotation(@deg:64.8deg);}}
+.per-18 {.circle-overlay {.rotation(@deg:68.4deg);}}
+.per-19 {.circle-overlay {.rotation(@deg:72deg);}}
+.per-20 {.circle-overlay {.rotation(@deg:75.6deg);}}
+.per-21 {.circle-overlay {.rotation(@deg:79.2deg);}}
+.per-22 {.circle-overlay {.rotation(@deg:82.8deg);}}
+.per-23 {.circle-overlay {.rotation(@deg:86.4deg);}}
+.per-24 {.circle-overlay {.rotation(@deg:90deg);}}
+.per-25 {.circle-overlay {.rotation(@deg:93.6deg);}}
+
+//Первый интервал от 0 до 90 градусов
+.per-25,
+.per-26,
+.per-27,
+.per-28,
+.per-29,
+.per-30,
+.per-31,
+.per-32,
+.per-33,
+.per-34,
+.per-35,
+.per-36,
+.per-37,
+.per-38,
+.per-39,
+.per-40,
+.per-41,
+.per-42,
+.per-43,
+.per-44,
+.per-45,
+.per-46,
+.per-47,
+.per-48,
+.per-49,
+.per-50 {
+  .circle-part-2 {
+    display: block!important;
+  }
+}
+
+.per-25 {.circle-overlay {.rotation(@deg:90deg);}}
+.per-26 {.circle-overlay {.rotation(@deg:93.6deg);}}    
