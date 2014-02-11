@@ -2,8 +2,8 @@
   position: absolute;
   top: 30%;
   left: 40%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   //overflow: hidden;
   .rounded(100%);
   
@@ -15,13 +15,15 @@
     .rounded(100%);
     
     
+    
     .circle-part-1 {
       width: 50%;
       height: 50%;
       position: absolute;
       left: 50%;
       background-color: #2980b9;
-      overflow: hidden;
+
+      //overflow: hidden;
      .border-radius( 100%, 0 , 0, 0);
     }
     
@@ -70,9 +72,45 @@
       .trans-origin(0 100%);
       .transition;
       .border-radius( 100%, 0 , 0, 0);
-        overflow: hidden;
+
     }
     
+    .circle-overlay-fix {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #2D3641;
+      .trans-origin(0 100%);
+      .transition;
+      .border-radius( 99%, 0 , 0, 0);
+      overflow: hidden;
+    }
+    .circle-overlay-fix:before {
+      content: ' ';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #2D3641;
+      .trans-origin(0 100%);
+      .transition;
+      .border-radius( 44%, 0 , 0, 0);
+    }
+  .circle-overlay-fix:after {
+      content: ' ';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #2D3641;
+      .trans-origin(0 100%);
+      .transition;
+      .border-radius( 99%, 0 , 0, 0);
+    }    
     .circle-hole {
       width: 70%;
       height: 70%;
@@ -82,6 +120,7 @@
       background-color: #1b242d;
       .rounded(100%);
       z-index: 11;
+      overflow: hidden;
     }
   }
 }
@@ -181,4 +220,24 @@
     .circle-part-2 {display: block!important;}
     .circle-part-3 { display: block!important;}
    .circle-part-4 { display: block!important;}
+}
+
+
+///test data
+.test-circle {
+  display: table;
+  width: 100%!important;
+  height: 100%!important;
+  background: transparent!important;
+  color: #fff!important;
+  text-align: center!important;
+  font-size: 2em;
+ .outline(@first-axis: 0, @second-axis: 0px, @third-axis: 0, @blur: 0, @out-color: transparent)!important;
+  border: 0!important;
+  .rounded(100%;)!important;
+}
+
+.test-circle:focus {
+ .outline(@first-axis: 0, @second-axis: 0px, @third-axis: 0, @blur: 0, @out-color: transparent)!important;
+  border: 0!important;
 }

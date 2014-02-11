@@ -1,5 +1,5 @@
 //loaders
-.loader {
+.fm-loader {
   position: relative;
 
   .spinner { 
@@ -61,7 +61,7 @@
 
 
 //FILE LOADER
-.file-loader {
+.fm-file-loader {
   display: table;
   position: relative;
   overflow: hidden;
@@ -111,7 +111,7 @@
     100% {
       color: lighten(@file-loader-before-icon-color, 5%);
     };
-}
+  }
 
  @-moz-keyframes file-load-before {
     0% {
@@ -121,9 +121,9 @@
     100% {
       color: lighten(@file-loader-before-icon-color, 5%);
     };
-}
+  }
 
-@-webkit-keyframes file-load-before {
+  @-webkit-keyframes file-load-before {
     0% {
       color: @file-loader-before-icon-color;
     }
@@ -141,7 +141,7 @@
     100% {
       height: 0;
     };
-}
+  }
 
  @-moz-keyframes file-load {
     0% {
@@ -151,7 +151,7 @@
     100% {
       height: 0;
     };
-}
+  }
 
 @-webkit-keyframes file-load {
     0% {

@@ -24,8 +24,9 @@
 @import 'elements/breadcrumbs.less';
 @import 'elements/blockquote.less';
 @import "elements/notifer.less";
-@import "elements/upload-button.less";
+@import "elements/file-upload-button.less";
 @import "elements/table.less";
+@import "elements/date-and-time.less";
 
 //Widgets - сформированны из простых элементов
 @import "widgets/circle-chart.less";
@@ -127,6 +128,11 @@
 @checkbox-item-checker-color: #2980b9;
 @checkbox-item-text-color: #fff;
 
+//DATE AND TIME 
+@day-background-color: #2980b9;
+@day-padding: 3px 5px;
+@day-and-time-font-size: 0.8333333333333334em;
+
 //IMAGES 
 @image-border-size: 1px; //Размер бордера у картинки
 @image-border-color: #556a7f; //Цвет бордера у картинки
@@ -172,6 +178,7 @@
 //PROGRESS BARR
 @progress-bar-holder-background: #2b3845;
 @progress-bar-loader-background: #44b2fb;
+@progress-bar-font-size: 0.8333333333333334em;
 
 //RADIO BUTTON
 @radio-button-background: #ecf0f1;
@@ -381,7 +388,7 @@ body {
 
 
 //TOP BAR
-.top-bar {
+.fm-top-bar {
   background-color: #0f1a24;
   display: table;
   height: 60px;
@@ -414,7 +421,7 @@ body {
     }
   }
   
-  .form-item {
+  .fm-form-item {
     margin: 0;
     
     input {
@@ -424,100 +431,4 @@ body {
   }
 }
 
-
-.date-element {
-  font-size: 0.8333333333333334em;
-  font-weight: bold;
-  margin: 0 10px 0 0;
-  
-  .day {
-    background-color: #2980b9;
-    padding: 3px 5px;
-    margin-right: 5px;
-    .rounded(@min-radius)
-  }
-  
-  .month {
-    margin-right: 3px;
-  }
-}
-
-.time-element.blink {
-  .hour:after {
-    animation: blinking 1s infinite linear;
-    -moz-animation: blinking 1s infinite linear;
-    -webkit-animation: blinking 1s infinite linear;
-  }
-  
-  
-  @keyframes blinking {
-    0% {
-      opacity: 100%;
-    }
-
-    90% {
-      opacity: 0;
-    };
-    
-    100% {
-      opacity: 100%;
-    }
-}
-
- @-moz-keyframes blinking {
-    0% {
-      opacity: 100%;
-    }
-
-    90% {
-      opacity: 0;
-    };
-    
-    100% {
-      opacity: 100%;
-    }
-}
-
-@-webkit-keyframes blinking  {
-    0% {
-      opacity: 100%;
-    }
-
-    90% {
-      opacity: 0;
-    };
-    
-    100% {
-      opacity: 100%;
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.time-element {
-  font-size: 0.8333333333333334em;
-  font-weight: bold;
-  margin: 0 10px 0 0;
-  .hour:after {
-    content: ':';
-    margin-left: 3px;
-  }
-}
 

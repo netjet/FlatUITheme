@@ -1,7 +1,5 @@
 /*  PROGRESS BAR*/
-.progress-bar-holder {
-  //height: 20px;
-  //padding: 3px;
+.fm-progress-bar {
   background-color: @progress-bar-holder-background;
   .rounded(@big-radius);
     
@@ -15,7 +13,7 @@
     .rounded(@big-radius);
     
     .progress-bar-status {
-      font-size: 0.8333333333333334em;
+      font-size: @progress-bar-font-size;
       position: absolute;
       top: 0;
       line-height: 14px;
@@ -23,10 +21,8 @@
   }
 }
 
-.progress-bar-holder.small {
-    //height: 7px;
-    //padding: 2px;
- 
+.fm-progress-bar.small {
+
     .progress-bar-loader {
     height: 3px;
   }
