@@ -14,12 +14,12 @@
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
 		<link rel="stylesheet/less" type="text/css" href="styles/flat-ui.less">
+		<link rel="stylesheet/less" type="text/css" href="styles/fonts/weather-icons-master/weather-icons/weather-icons.less"/>
 		<link rel="stylesheet/less" type="text/css" href="styles/fonts/font-awesome/less/font-awesome.less"/>
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		<script src="js/lib/less-1.3.3.min.js" type="text/javascript"></script> 
-
-	
+		<script src="js/lib/less-1.3.3.min.js" type="text/javascript"></script>
 	</head>
+
 	<body>
 		<!--[if lt IE 7]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -27,22 +27,134 @@
 
 		<div class="layout-panel application-layout">
 			<header class="layout-header">
-				<div class="sample-part-2">
-					Хэдер
+				<div class="fm-top-bar">
+					<div class="top-bar-logo">
+						<h3>Flatmatic</h3>
+					</div>
+					<div class="top-bar-other">
+
+						<nav class="fm-hor-navigation fm-navigation fm-left">
+							<ul>
+								<li class="current">
+									<a href="#"><span>Пункт 1</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Пункт 1</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Пункт 1</span></a>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="fm-form-item fm-right">
+							<button class="icon-input-button">
+								<i class="fa fa-search"></i>
+							</button>
+							<input type="text" placeholder="Поиск" class="middle">
+						</div>
+						<button class="fm-btn-small fm-btn-blue fm-right">
+							<span>Кнопка в топбаре</span>
+						</button>
+					</div>
 				</div>
 			</header>
-			
+
 			<div class="layout-content">
-				<div class="layout-panel">
+				<div class="layout-panel fm-app-inner-panel">
 					<div class="layout-column left-column">
-						<div class="sample-part">
-							Левая колонка
+
+						<div class="layout-panel">
+							<div class="layout-content">
+								<div class="layout-panel">
+
+									<div class="layout-column center-column">
+
+										<div class="layout-panel fm-styled-panel">
+											<header class="layout-header">
+
+												<div class="panel-header">
+													<div class="header-title fm-left">
+														<label>Заголовок</label>
+													</div>
+													
+												</div>
+
+											</header>
+											<div class="layout-content">
+												<div class="layout-panel">
+													<div class="layout-column center-column">
+														<div class="panel-content">
+															Центальная колонка
+														</div>
+													</div>
+												</div>
+											</div>
+											<footer class="layout-footer">
+												<div class="sample-part-2">
+													Футер
+												</div>
+											</footer>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
 						</div>
+
 					</div>
 					<div class="layout-column center-column">
 
-						<div class="sample-part">
-							Центальная колонка
+		<div class="layout-panel">
+							<div class="layout-content">
+								<div class="layout-panel">
+
+									<div class="layout-column center-column">
+
+										<div class="layout-panel fm-styled-panel">
+											<header class="layout-header">
+
+												<div class="panel-header">
+													<div class="header-title fm-left">
+														<label>Заголовок</label>
+													</div>
+													<div class="header-toolbar fm-right">
+														<div class="fm-split-buttons">
+															<button class="fm-btn-small">
+																<span>Документы</span>
+															</button>
+															<button class="fm-btn-small">
+																<span>Сервисы</span>
+															</button>
+															<button class="fm-btn-small">
+																<span>Фрагменты</span>
+															</button>
+														</div>
+													</div>
+												</div>
+
+											</header>
+											<div class="layout-content">
+												<div class="layout-panel">
+													<div class="layout-column center-column">
+														<div class="panel-content">
+															Центальная колонка
+														</div>
+													</div>
+												</div>
+											</div>
+											<footer class="layout-footer">
+												<div class="sample-part-2">
+													Футер
+												</div>
+											</footer>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
 					<div class="layout-column right-column">
@@ -54,13 +166,13 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<footer class="layout-footer">
 				<div class="sample-part-2">
 					Футер
 				</div>
 			</footer>
-			
+
 		</div>
 	</body>
 </html>

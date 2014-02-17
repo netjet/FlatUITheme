@@ -1,49 +1,17 @@
-.fm-simple-panel {
-  background-color: @simple-panel-background;
+.fm-styled-panel {
+ // background-color: #0A1116;
   
-  header {
-    height: 70px;
-    position: relative;
+  
+  .panel-header:before,
+  .panel-header:after {
     display: table;
-    width: 100%;
-    
-    .header-title {
-      display: table-cell;
-      height: 70px;
-      padding: 0 20px;
-      overflow: hidden;
-      
-      h1, h2, h3, h4, p, span {
-        margin: 0;
-        height: 70px;
-        line-height: 70px;
-      }
-    }  
-    
-    .header-toolbar {
-      display: table-cell;
-      height: 70px;
-      vertical-align: middle;
-      text-align: right;
-      padding: 0 20px;
-      width: auto;
-    }
+    height: 0;
+    overflow: hidden;
+    content: ' ';
+    clear: both;
   }
-  
-  .simple-panel-content {
-    padding: 0 20px 20px 20px;
-  }
-  
-  footer {
-    background-color: #18212A;
-    display: table;
-    width: 100%;
-    
-    .footer-toolbar {
-      height: 70px;
-      display: table-cell;
-      padding: 20px;
-    }
-    
+  .panel-content,
+  .panel-header {
+    padding: 10px;
   }
 }
