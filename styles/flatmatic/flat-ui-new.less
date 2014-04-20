@@ -3,7 +3,6 @@
 @import "onepcssgrid.less";   //Резиновая сетка
 @import "mixin.less";         //Миксы
 
-
 //Theme color variables
 @import "color-variables";    //Цветовая схема
 
@@ -15,62 +14,25 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,cyrillic);
 
 //Base elements - простые элементы
-@import "elements/titles.less";
-@import "elements/links.less";
-@import "elements/text.less";
-@import "elements/inputs.less";
-@import "elements/buttons.less";
-@import "elements/images.less";
-@import "elements/navigation.less";
-@import "elements/progress-bar.less";
-@import 'elements/loader.less';
-@import 'elements/switcher.less';
-@import 'elements/radio.less';
-@import 'elements/checkbox.less';
-@import 'elements/simple-list.less';
-@import 'elements/breadcrumbs.less';
-@import 'elements/blockquote.less';
-@import "elements/notifer.less";
-@import "elements/file-upload-button.less";
-@import "elements/table.less";
-@import "elements/date-and-time.less";
-@import "elements/project-icons.less";
+@import "elements/body";
+@import "elements/titles";
+@import "elements/text";
 
-//Widgets - сформированны из простых элементов
-@import "widgets/circle-chart.less";
-@import "widgets/tree.less";
-@import "widgets/media-list.less";
-@import "widgets/numeric-field.less";
-@import "widgets/paginator.less";
-@import "widgets/tabs-horizontal.less";
-@import "widgets/tabs-vertical.less";
-@import "widgets/tags.less";
-@import "widgets/accordion.less";
-@import "widgets/dropdown-list.less";
-@import 'widgets/icon-field.less';
-@import 'widgets/code-block.less';
-@import 'widgets/form-item.less';
-@import 'widgets/split-buttons.less';
-@import "widgets/weather.less";
-@import "widgets/datepicker.less";
 
-//Variables
-@first-bg-color: #1b242d;
-@second-bg-color: #0f1a24; 
-@base-line: 1.375em;
+//Widgets - составные виджеты
+@import "widgets/code-block";
 
-//paragraph vars
+//BODY BASE VARS
+@base-font-family: 'Open Sans', sans-serif;
+@base-font-size: 1.4em; //16px
+@base-line: 1.25em; //20px
+@base-background: @white;
+@base-text-color: @night-blue;
+
+//PARAGRAPH
 @p-max-width: 33em; //Макаимальная ширина абзаца
 @p-text-ident: 1em; //Ширина отступа в абзаце
 
-//FONTS 
-@title-font-weight: 'Open Sans', sans-serif;
-@bold-font-weigh: 'Open Sans', sans-serif;
-@normal-font-weigh: 'Open Sans', sans-serif;
-
-//Colors variables
-@white-color: #fff;
-@base-text-color: #fff;
 
 //BORDER-RADIUS
 @big-radius: 10px; //Большой радиус
@@ -307,13 +269,6 @@
 ///////////////////////////////// LAYOUTS //////////////////////////////////
 @simple-panel-background: #222A33;
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-
-
 
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IE8 FIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -334,7 +289,7 @@ body {
   }
   
   input[type="checkbox"] + label {
-    color: @white-color;
+    color: @white;
     cursor: pointer;
   }
   
@@ -343,7 +298,7 @@ body {
   }
   
   input[type="checkbox"] + label:hover .checker {
-    background: @white-color;
+    background: @white;
     
   }
   
@@ -369,7 +324,7 @@ body {
   }
   
   input[type="checkbox"]:checked + label .checker {
-    background: @white-color;
+    background: @white;
     
     i {
       display: table;

@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d653ab59-b33b-4dae-8f7d-e17536c1f82b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/FlatUITheme.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/baseliner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/flatmatic/elements/body.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/flatmatic/flat-ui-new.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index-new.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/jquery.snippet.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\doc\TOC.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\doc\crossdomain.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\doc\css.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\doc\extend.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\doc\faq.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\doc\html.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\doc\js.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\doc\misc.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\doc\usage.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\spinning.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_spinning.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\font-awesome\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\cheatsheet\css\cheatsheet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\cheatsheet\css\weather-icons.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\cheatsheet\font\weathericons-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\cheatsheet\font\weathericons-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\cheatsheet\font\weathericons-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\cheatsheet\font\weathericons-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\cheatsheet\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\css\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\css\weather-icons.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\css\weather-icons.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\font\weathericons-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\font\weathericons-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\font\weathericons-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\font\weathericons-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\reference\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\reference\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\reference\font\WeatherIcons-Regular.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\reference\font\weathericons-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\reference\font\weathericons-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\reference\font\weathericons-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\reference\font\weathericons-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\reference\reference.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\weather-icons\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\weather-icons\icon-classes.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\weather-icons\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\fonts\weather-icons-master\weather-icons\weather-icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic\main.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/flatmatic/widgets/code-block.less" afterPath="$PROJECT_DIR$/styles/flatmatic/widgets/code-block.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/flatmatic/common-resets.less" afterPath="$PROJECT_DIR$/styles/flatmatic/common-resets.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/flatmatic/flat-ui.less" afterPath="$PROJECT_DIR$/styles/flatmatic/flat-ui.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/flatmatic/mixin.less" afterPath="$PROJECT_DIR$/styles/flatmatic/mixin.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/flatmatic/elements/text.less" afterPath="$PROJECT_DIR$/styles/flatmatic/elements/text.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/flatmatic/elements/titles.less" afterPath="$PROJECT_DIR$/styles/flatmatic/elements/titles.less" />
+    </list>
+    <ignored path="FlatUITheme.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FlatUITheme" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.40521172">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="color-variables.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/flatmatic/color-variables.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="680">
+                  <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.21871345" vertical-offset="255" max-vertical-offset="28662">
+                  <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="body.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/body.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
+                  <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index-new.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index-new.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-26.807692" vertical-offset="102" max-vertical-offset="1139">
+                  <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="flat-ui-new.less" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/styles/flatmatic/flat-ui-new.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.33801168" vertical-offset="0" max-vertical-offset="7565">
+                  <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="text.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/text.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="357">
+                  <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="titles.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/titles.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="663">
+                  <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="code-block.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/flatmatic/widgets/code-block.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-10.653846" vertical-offset="1202" max-vertical-offset="2057">
+                  <caret line="87" column="53" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mixin.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/flatmatic/mixin.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="2131" max-vertical-offset="2873">
+                  <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/styles/flatmatic/flat-ui.less" />
+        <option value="$PROJECT_DIR$/styles/flatmatic/color-variables.less" />
+        <option value="$PROJECT_DIR$/styles/flatmatic/common-resets.less" />
+        <option value="$PROJECT_DIR$/styles/flatmatic/mixin.less" />
+        <option value="$PROJECT_DIR$/styles/flatmatic/elements/titles.less" />
+        <option value="$PROJECT_DIR$/styles/flatmatic/elements/text.less" />
+        <option value="$PROJECT_DIR$/styles/flatmatic/elements/body.less" />
+        <option value="$PROJECT_DIR$/styles/flatmatic/flat-ui-new.less" />
+        <option value="$PROJECT_DIR$/styles/flatmatic/widgets/code-block.less" />
+        <option value="$PROJECT_DIR$/index-new.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FlatUITheme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FlatUITheme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FlatUITheme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FlatUITheme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FlatUITheme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FlatUITheme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FlatUITheme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\GitHub\FlatUITheme\js\lib" />
+      <recent name="C:\Users\user\Documents\GitHub\FlatUITheme\styles\flatmatic" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d653ab59-b33b-4dae-8f7d-e17536c1f82b" name="Default" comment="" />
+      <created>1397941368334</created>
+      <updated>1397941368334</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18176973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/color-variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="28662">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/body.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/flat-ui-new.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="7497">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/text.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="357">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/titles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="663">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/mixin.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2131" max-vertical-offset="2873">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/color-variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="680">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="28662">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/body.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/flat-ui-new.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7497">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/text.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="357">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/titles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/mixin.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2131" max-vertical-offset="2873">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/flat-ui.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6744186" vertical-offset="816" max-vertical-offset="8330">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/checkbox.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63978493" vertical-offset="0" max-vertical-offset="1003">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/common-resets.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44186047" vertical-offset="0" max-vertical-offset="765">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/baseliner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4539">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/radio.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5903614" vertical-offset="159" max-vertical-offset="969">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/color-variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="680">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/mixin.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2131" max-vertical-offset="2873">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/body.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/google-code-prettify/run_prettify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="858">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/jquery.snippet.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="858">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/titles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="663">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/elements/text.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="357">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.807692" vertical-offset="102" max-vertical-offset="1139">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21871345" vertical-offset="255" max-vertical-offset="28662">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/widgets/code-block.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.653846" vertical-offset="1202" max-vertical-offset="2057">
+          <caret line="87" column="53" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/flatmatic/flat-ui-new.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33801168" vertical-offset="0" max-vertical-offset="7565">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
