@@ -17,7 +17,7 @@
 @import "elements/body";
 @import "elements/titles";
 @import "elements/text";
-
+@import "elements/buttons";
 
 //Widgets - составные виджеты
 @import "widgets/code-block";
@@ -29,9 +29,6 @@
 @base-background: @white;
 @base-text-color: @night-blue;
 
-//PARAGRAPH
-@p-max-width: 33em; //Макаимальная ширина абзаца
-@p-text-ident: 1em; //Ширина отступа в абзаце
 
 
 //BORDER-RADIUS
@@ -43,32 +40,11 @@
 @outline-color: #3498db; //Цвет обводки
 @outline-size: 2px; //Размер обводки
 
-//small button vars
-@small-button-size: 2.000em; //Размер маленькой кнопки
-@small-button-text-size: 0.938em; //Раземер текста маленькой кнопки
-
-//middle button vars
-@middle-button-size: 2.500em; //Размер средней кнопки
-@middle-button-text-size: 1em; //Раземер текста средней кнопки
-
-//big button vars
-@big-button-size: 2.625em; //Размер большой кнопки
-@big-button-text-size: 1.188em; //Раземер текста большой кнопки
-
-//blue button color
-@blue-button-color: #2980b9; //Оттенок синей кнопки
-
-//Green button color
-@green-button-color: #549E4D; //Оттенок зеленой кнопки
-
-//Red button color
-@red-button-color: #e84d4d; //Оттенок крассной кнопки
-
 //Blue
-@d-blue-color: #1b242d;
-@blue-color: #2980b9;
-@l-blue-color: #3498db;
-@a-blue-color: #2b7aad; //color on press
+//@d-blue-color: #1b242d;
+//@blue-color: #2980b9;
+//@l-blue-color: #3498db;
+//@a-blue-color: #2b7aad; //color on press
 
 //Gray
 @l-gray-color: #ecf0f1;
@@ -271,71 +247,71 @@
 
 
 
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IE8 FIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-.lt-ie9 {
- //Checkbox form
-.checkbox-item {
-  input[type="checkbox"] {
-    display:table;
-    .rounded;
-     width: 1.125em;
-    height: 1.125em;
-     behavior: url(pie/PIE.htc);
-     border: 0!important;
-     background: transparent!important;
-     outline: none;
-     position: absolute;
-     z-index: 10;
-  }
-  
-  input[type="checkbox"] + label {
-    color: @white;
-    cursor: pointer;
-  }
-  
-  input[type="checkbox"]:focus {
-    .outline;  
-  }
-  
-  input[type="checkbox"] + label:hover .checker {
-    background: @white;
-    
-  }
-  
-  input[type="checkbox"] + label .checker {
-   position: absolute;
-   vertical-align: middle;
-   cursor: pointer;
-   background: @l-gray-color;
-   .rounded;
-   width: @checkbox-size;
-   height: @checkbox-size;
-   text-align: center;
-   margin: 0 10px 0 0;
-   behavior: url(pie/PIE.htc);
-   z-index: 5;
-    
-   i {display: none;}
-  }
-  
-  .value {
-    margin: 0 0 0 @checkbox-size + 0.625em;
-    font-size: 1em;
-  }
-  
-  input[type="checkbox"]:checked + label .checker {
-    background: @white;
-    
-    i {
-      display: table;
-      font-size: 1.125em;
-      color: @blue-color;
-      padding: 0.063em;
-      width: 100%;
-    }
-  }
-} 
-}
+////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IE8 FIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//.lt-ie9 {
+// //Checkbox form
+//.checkbox-item {
+//  input[type="checkbox"] {
+//    display:table;
+//    .rounded;
+//     width: 1.125em;
+//    height: 1.125em;
+//     behavior: url(pie/PIE.htc);
+//     border: 0!important;
+//     background: transparent!important;
+//     outline: none;
+//     position: absolute;
+//     z-index: 10;
+//  }
+//
+//  input[type="checkbox"] + label {
+//    color: @white;
+//    cursor: pointer;
+//  }
+//
+//  input[type="checkbox"]:focus {
+//    .outline;
+//  }
+//
+//  input[type="checkbox"] + label:hover .checker {
+//    background: @white;
+//
+//  }
+//
+//  input[type="checkbox"] + label .checker {
+//   position: absolute;
+//   vertical-align: middle;
+//   cursor: pointer;
+//   background: @l-gray-color;
+//   .rounded;
+//   width: @checkbox-size;
+//   height: @checkbox-size;
+//   text-align: center;
+//   margin: 0 10px 0 0;
+//   behavior: url(pie/PIE.htc);
+//   z-index: 5;
+//
+//   i {display: none;}
+//  }
+//
+//  .value {
+//    margin: 0 0 0 @checkbox-size + 0.625em;
+//    font-size: 1em;
+//  }
+//
+//  input[type="checkbox"]:checked + label .checker {
+//    background: @white;
+//
+//    i {
+//      display: table;
+//      font-size: 1.125em;
+//      color: @blue-color;
+//      padding: 0.063em;
+//      width: 100%;
+//    }
+//  }
+//}
+//}
 
 
 .no-borderradius {
